@@ -93,7 +93,19 @@ body { margin: 0; }
 
 /* — каталог по отраслям (1b) — */
 .catalog { padding: var(--space-4); max-width: 720px; margin: 0 auto; }
-.catalog-search { margin: var(--space-3) 0; }
+
+.catalog-hero { position: relative; padding-top: var(--space-2); padding-bottom: var(--space-8); overflow: hidden; }
+.catalog-hero-figure {
+  position: absolute; top: -8px; right: -28px; z-index: 0;
+  width: 190px; height: auto; pointer-events: none;
+}
+.catalog-hero .catalog-search { position: relative; z-index: 1; max-width: 58%; margin: var(--space-3) 0; }
+
+@media (min-width: 900px) {
+  .catalog-hero { padding-top: var(--space-4); }
+  .catalog-hero-figure { width: 280px; top: 0; right: 0; }
+  .catalog-hero .catalog-search { max-width: 420px; }
+}
 .industry-list { display: flex; flex-direction: column; gap: 8px; }
 .industry-item { border: 1px solid var(--color-divider); border-radius: var(--radius-md); overflow: hidden; }
 .industry-header {
