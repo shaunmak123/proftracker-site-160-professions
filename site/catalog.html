@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<title>Каталог по отраслям — Электронный каталог профессий</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="styles.css">
+<link rel="stylesheet" href="app.css">
+</head>
+<body>
+
+<header class="topbar">
+  <a class="icon-btn" href="index.html" aria-label="Назад">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M19 12H5"/><path d="M12 19l-7-7 7-7"/></svg>
+  </a>
+  <div class="crumb" id="catalog-crumb">17 ОТРАСЛЕЙ · 160 ПРОФЕССИЙ</div>
+  <span style="width:32px"></span>
+</header>
+
+<main class="catalog">
+  <div class="field catalog-search">
+    <div class="search-box">
+      <input class="input" id="search-input" type="text" placeholder="Поиск по каталогу" autocomplete="off" role="combobox" aria-expanded="false" aria-controls="suggest-list" aria-autocomplete="list">
+      <div class="suggest-list" id="suggest-list" role="listbox" hidden></div>
+    </div>
+  </div>
+
+  <div class="industry-list" id="industry-list"></div>
+</main>
+
+<footer class="site-footer">
+  <div class="footer-logos">
+    <img src="assets/img/logo-dvizhenie-pervyh.svg" alt="Движение Первых">
+    <img src="assets/img/logo-proftracker.svg" alt="АНО «ПРОФТРЕКЕР»">
+  </div>
+  <p class="footer-support">Проект реализуется при поддержке Общероссийского общественно-государственного движения детей и молодёжи «Движение Первых» в рамках программы «Гранты Первых». #ДвижениеПервых #ГрантыПервых</p>
+  <p class="footer-support">Разработано АНО «ПРОФТРЕКЕР» · Игра «Создай предприятие»</p>
+</footer>
+
+<script src="app.js"></script>
+<script>
+(function () {
+  var listEl = document.getElementById('industry-list');
+  var input = document.getElementById('search-input');
+  var suggest = document.getElementById('suggest-list');
+
+  ProfTrekerSite.initSearch(input, suggest, function (p) { window.location.href = 'p/' + p.slug + '.html'; });
+
+  ProfTrekerSite.loadData().then(function (data) {
+    document.getElementById('catalog-crumb').textContent =
+      data.industries.length + ' ОТРАСЛЕЙ · ' + data.professions.length + ' ПРОФЕССИЙ';
+
+    data.industries.forEach(function (ind) {
+      var professions = data.professions
+        .filter(function (p) { return p.industry === ind.name; })
+        .sort(function (a, b) { return a.id - b.id; });
+
+      var item = document.createElement('div');
+      item.className = 'industry-item';
+      item.innerHTML =
+        '<div class="industry-header">' +
+          '<span class="industry-name">' + ind.name + '</span>' +
+          '<span class="industry-meta">' +
+            '<span class="industry-count">' + professions.length + '</span>' +
+            '<svg class="industry-chevron" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 9l6 6 6-6"/></svg>' +
+          '</span>' +
+        '</div>' +
+        '<div class="industry-body"><div class="industry-grid"></div></div>';
+
+      var grid = item.querySelector('.industry-grid');
+      professions.forEach(function (p) {
+        var a = document.createElement('a');
+        a.href = 'p/' + p.slug + '.html';
+        a.textContent = p.name;
+        grid.appendChild(a);
+      });
+
+      listEl.appendChild(item);
+    });
+
+    ProfTrekerSite.initIndustryAccordion(listEl);
+  });
+})();
+</script>
+</body>
+</html>

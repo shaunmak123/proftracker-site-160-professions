@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<title>Электронный каталог профессий — Создай предприятие</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="Введи название профессии с карточки — покажем, что человек делает, чем управляет, сколько зарабатывает и где этому учиться.">
+<link rel="stylesheet" href="styles.css">
+<link rel="stylesheet" href="app.css">
+</head>
+<body>
+
+<header class="topbar">
+  <div class="nav-brand" style="font-size:14px">КАТАЛОГ ПРОФЕССИЙ</div>
+  <a class="icon-btn" href="my.html" aria-label="Мои профессии">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16v16H4z" opacity="0"/><line x1="4" y1="7" x2="20" y2="7"/><line x1="4" y1="12" x2="20" y2="12"/><line x1="4" y1="17" x2="14" y2="17"/></svg>
+  </a>
+</header>
+
+<main class="start">
+  <p class="kicker">Игра «Создай предприятие»</p>
+  <h2>Взял карту? Узнай, кто это на самом деле</h2>
+  <p class="lead">Введи название профессии с карточки — покажем, что человек делает, чем управляет, сколько зарабатывает и где этому учат.</p>
+
+  <div class="field">
+    <label for="search-input">Название профессии с карты</label>
+    <div class="search-box">
+      <input class="input" id="search-input" type="text" placeholder="Например: сварщик" autocomplete="off" role="combobox" aria-expanded="false" aria-controls="suggest-list" aria-autocomplete="list">
+      <div class="suggest-list" id="suggest-list" role="listbox" hidden></div>
+    </div>
+  </div>
+
+  <button class="btn btn-primary btn-block" type="button" id="find-btn" style="height:48px">Найти профессию</button>
+
+  <div class="not-found" id="not-found">
+    <p class="text-muted" style="font-size:13px">Не нашли такую профессию. Проверь номер в углу карты или открой список по отраслям.</p>
+    <a class="btn btn-secondary" href="catalog.html">Открыть каталог</a>
+  </div>
+
+  <div class="start-actions">
+    <a class="btn btn-secondary" href="catalog.html" style="flex:1">Все 160 профессий</a>
+    <button class="btn btn-secondary" type="button" id="random-btn" style="flex:1">Случайная карта</button>
+  </div>
+
+  <p class="start-footnote">Не нашёл название? Проверь номер в углу карты или открой список по отраслям. Здесь нет лучших и худших профессий — все 160 равны, разница только в том, кому какая подходит.</p>
+</main>
+
+<footer class="site-footer">
+  <div class="footer-logos">
+    <img src="assets/img/logo-dvizhenie-pervyh.svg" alt="Движение Первых">
+    <img src="assets/img/logo-proftracker.svg" alt="АНО «ПРОФТРЕКЕР»">
+  </div>
+  <p class="footer-support">Проект реализуется при поддержке Общероссийского общественно-государственного движения детей и молодёжи «Движение Первых» в рамках программы «Гранты Первых». #ДвижениеПервых #ГрантыПервых</p>
+  <p class="footer-support">Разработано АНО «ПРОФТРЕКЕР» · Игра «Создай предприятие»</p>
+</footer>
+
+<script src="app.js"></script>
+<script>
+(function () {
+  var input = document.getElementById('search-input');
+  var list = document.getElementById('suggest-list');
+  var notFound = document.getElementById('not-found');
+
+  function goTo(p) { window.location.href = 'p/' + p.slug + '.html'; }
+
+  ProfTrekerSite.initSearch(input, list, goTo);
+
+  document.getElementById('find-btn').addEventListener('click', function () {
+    ProfTrekerSite.loadData().then(function (data) {
+      var matches = ProfTrekerSite.searchProfessions(input.value, data.professions, 1);
+      if (matches.length) { goTo(matches[0]); }
+      else { notFound.classList.add('is-visible'); }
+    });
+  });
+
+  document.getElementById('random-btn').addEventListener('click', function () {
+    ProfTrekerSite.loadData().then(function (data) {
+      var list = data.professions;
+      var p = list[Math.floor(Math.random() * list.length)];
+      goTo(p);
+    });
+  });
+
+  input.addEventListener('input', function () { notFound.classList.remove('is-visible'); });
+})();
+</script>
+</body>
+</html>
