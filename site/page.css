@@ -50,6 +50,12 @@ body { margin: 0; }
 
 .profession-photo { margin-bottom: var(--space-4); }
 .profession-photo .ph { height: 180px; }
+.profession-photo.has-photo {
+  background: var(--color-surface); text-align: center; overflow: hidden;
+}
+.profession-photo.has-photo img {
+  display: block; margin: 0 auto; width: 100%; height: auto; max-height: 460px; object-fit: contain;
+}
 
 .stat-grid {
   display: grid; grid-template-columns: 1fr 1fr; gap: 1px;

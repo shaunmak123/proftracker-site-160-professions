@@ -7,6 +7,11 @@ const path = require('path');
 const ROOT = __dirname;
 const DATA_PATH = path.join(ROOT, 'site', 'data', 'professions.json');
 const OUT_DIR = path.join(ROOT, 'site', 'p');
+const PHOTOS_DIR = path.join(ROOT, 'site', 'assets', 'img', 'photos');
+
+function hasPhoto(slug) {
+  return fs.existsSync(path.join(PHOTOS_DIR, `${slug}.png`));
+}
 
 const data = JSON.parse(fs.readFileSync(DATA_PATH, 'utf8'));
 const bySlug = {};
@@ -70,9 +75,11 @@ function renderPage(p) {
 <main class="profession">
 
   <div class="profession-media">
-    <figure class="blueprint duotone profession-photo">
+    <figure class="blueprint profession-photo${hasPhoto(p.slug) ? ' has-photo' : ' duotone'}">
       <i class="corner tl"></i><i class="corner tr"></i><i class="corner bl"></i><i class="corner br"></i>
-      <div class="ph">фото профессии<br>с карточки колоды<br>(${esc(p.image || p.name + '.jpg')})</div>
+      ${hasPhoto(p.slug)
+        ? `<img src="../assets/img/photos/${p.slug}.png" alt="Карточка профессии «${esc(p.name)}»" loading="lazy">`
+        : `<div class="ph">фото профессии<br>с карточки колоды<br>(${esc(p.image || p.name + '.jpg')})</div>`}
     </figure>
 
     <div class="blueprint stat-grid">
