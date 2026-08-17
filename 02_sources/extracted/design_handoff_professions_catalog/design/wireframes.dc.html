@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet data-dc-atomics><meta name="design_doc_mode" content="canvas"><link rel="stylesheet" href="_ds/industry-fc897cbf-d375-45e9-993b-10e5f13e74cd/styles.css"><script src="_ds/industry-fc897cbf-d375-45e9-993b-10e5f13e74cd/_ds_bundle.js"></script><style>
+body{margin:0;background:#e4e4e6}
+.dv-turn{padding:40px 44px 32px;border-bottom:1px solid rgba(0,0,0,.08);scroll-margin-top:16px}
+.dv-thd{display:flex;align-items:baseline;gap:10px;margin:0 0 20px}
+.dv-tid{font:600 10px ui-monospace,Menlo,monospace;padding:3px 7px;background:#1d1f20;color:#fff;border-radius:4px;text-decoration:none}
+.dv-tname{font:600 13px/1.2 var(--font-body);color:#1d1f20}
+.dv-opts{display:flex;flex-wrap:wrap;gap:34px;align-items:flex-start}
+.dv-opt{flex:none;display:flex;flex-direction:column;gap:9px;scroll-margin-top:16px}
+.dv-oid{font:600 10.5px ui-monospace,Menlo,monospace;padding:3px 7px;background:rgba(0,0,0,.09);color:#1d1f20;border-radius:5px;text-decoration:none}
+.dv-olabel{display:flex;align-items:baseline;gap:8px;font:400 11px/1.3 var(--font-body);color:rgba(0,0,0,.55)}
+.dv-card{max-width:100%;background:var(--color-bg);border:1px solid rgba(0,0,0,.14);overflow:hidden}
+.dv-opt:target .dv-oid{background:#5980a6;color:#fff}
+.dv-next{margin:22px 0 0;font:12px/1.6 var(--font-body);color:rgba(0,0,0,.5)}
+.ph{background:repeating-linear-gradient(45deg,rgba(29,31,32,.07) 0 6px,transparent 6px 12px);display:flex;align-items:center;justify-content:center;font:400 10px ui-monospace,Menlo,monospace;color:rgba(29,31,32,.5);text-align:center;letter-spacing:.04em;padding:8px}
+.sec{border-top:1px solid var(--color-divider);padding:14px 0 2px}
+.sec h6{margin:0 0 6px;color:var(--color-accent-700)}
+.sec p{font-size:13px;margin:0 0 8px}
+.sec ul{margin:0 0 8px;padding-left:16px;font-size:13px}
+.sec li{margin-bottom:3px;break-inside:avoid;-webkit-column-break-inside:avoid}
+</style></helmet>
+
+<section class="dv-turn" id="t1">
+<div class="dv-thd"><a class="dv-tid" href="#t1">1</a><span class="dv-tname">Электронный каталог профессий — основной поток (мобильный) + десктоп</span></div>
+<div class="dv-opts">
+
+<div class="dv-opt" id="1a">
+<div class="dv-olabel"><a class="dv-oid" href="#1a">1a</a>Стартовый экран: ввод названия с карты</div>
+<div class="dv-card" style="width:390px">
+  <div style="display:flex;align-items:center;justify-content:space-between;padding:12px 16px;border-bottom:1px solid var(--color-divider)">
+    <div style="font:600 12px/1 var(--font-heading);letter-spacing:.1em;text-transform:uppercase">Каталог профессий</div>
+    <div class="ph" style="width:26px;height:26px">≡</div>
+  </div>
+  <div style="padding:22px 16px 16px">
+    <div style="font:400 10px ui-monospace,Menlo,monospace;letter-spacing:.1em;text-transform:uppercase;color:var(--color-accent-700);margin-bottom:8px">Игра «Создай предприятие»</div>
+    <h2 style="margin:0 0 8px;font-size:30px">Взял карту? Узнай, кто это на самом деле</h2>
+    <p style="font-size:13px;color:rgba(29,31,32,.6);margin:0 0 18px">Введи название профессии с карточки — покажем, что человек делает, чем управляет, сколько зарабатывает и где этому учат.</p>
+    <div class="field" style="margin-bottom:10px">
+      <label for="q">Название профессии с карты</label>
+      <input id="q" class="input" value="сталев" style="min-height:44px;font-size:16px">
+    </div>
+    <div class="blueprint" style="margin:0 0 16px;background:var(--color-surface)">
+      <i class="corner tl"></i><i class="corner tr"></i><i class="corner bl"></i><i class="corner br"></i>
+      <div style="padding:4px 0">
+        <div style="display:flex;justify-content:space-between;gap:8px;padding:10px 12px;border-bottom:1px solid var(--color-divider)"><span style="font:600 15px var(--font-heading)">Сталевар</span><span style="font-size:11px;color:rgba(29,31,32,.55)">Металлургия</span></div>
+        <div style="display:flex;justify-content:space-between;gap:8px;padding:10px 12px;border-bottom:1px solid var(--color-divider)"><span style="font:600 15px var(--font-heading)">Сталевар установки внепечной обработки</span><span style="font-size:11px;color:rgba(29,31,32,.55)">Металлургия</span></div>
+        <div style="display:flex;justify-content:space-between;gap:8px;padding:10px 12px"><span style="font:600 15px var(--font-heading)">Сварщик труб на стане</span><span style="font-size:11px;color:rgba(29,31,32,.55)">Металлургия</span></div>
+      </div>
+    </div>
+    <button class="btn btn-primary btn-block blueprint" style="min-height:48px;font-size:16px"><i class="corner tl"></i><i class="corner tr"></i><i class="corner bl"></i><i class="corner br"></i>Найти профессию</button>
+    <div style="display:flex;gap:10px;margin-top:22px">
+      <a class="btn btn-secondary" href="#1b" style="flex:1;min-height:44px">Все 160 профессий</a>
+      <a class="btn btn-secondary" href="#1c" style="flex:1;min-height:44px">Случайная карта</a>
+    </div>
+    <p style="font-size:11px;color:rgba(29,31,32,.5);margin:20px 0 0">Не нашёл название? Проверь номер в углу карты или открой список по отраслям. Здесь нет лучших и худших профессий — все 160 равны, разница только в том, кому какая подходит.</p>
+  </div>
+</div>
+</div>
+
+<div class="dv-opt" id="1b">
+<div class="dv-olabel"><a class="dv-oid" href="#1b">1b</a>Каталог по отраслям</div>
+<div class="dv-card" style="width:390px">
+  <div style="display:flex;align-items:center;gap:10px;padding:12px 16px;border-bottom:1px solid var(--color-divider)">
+    <div class="ph" style="width:26px;height:26px">←</div>
+    <div style="font:600 12px/1 var(--font-heading);letter-spacing:.1em;text-transform:uppercase">17 отраслей · 160 профессий</div>
+  </div>
+  <div style="padding:14px 16px 18px">
+    <input class="input" value="Поиск по каталогу" style="min-height:40px;color:rgba(29,31,32,.45);margin-bottom:14px">
+    <div style="display:flex;flex-direction:column;gap:8px">
+      <div style="display:flex;justify-content:space-between;align-items:center;padding:12px;border:1px solid var(--color-divider)"><span style="font:600 17px var(--font-heading)">Горно-добывающая</span><span style="font-size:12px;color:rgba(29,31,32,.5)">14 ›</span></div>
+      <div style="border:1px solid var(--color-accent);background:var(--color-accent-100)">
+        <div style="display:flex;justify-content:space-between;align-items:center;padding:12px"><span style="font:600 17px var(--font-heading)">Металлургия</span><span style="font-size:12px;color:var(--color-accent-700)">10 ⌄</span></div>
+        <div style="display:grid;grid-template-columns:1fr 1fr;gap:1px;background:var(--color-divider);border-top:1px solid var(--color-divider)">
+          <div style="background:var(--color-bg);padding:10px 8px;font-size:12.5px">Сталевар</div>
+          <div style="background:var(--color-bg);padding:10px 8px;font-size:12.5px">Горновой доменной печи</div>
+          <div style="background:var(--color-bg);padding:10px 8px;font-size:12.5px">Газовщик доменной печи</div>
+          <div style="background:var(--color-bg);padding:10px 8px;font-size:12.5px">Вальцовщик стана</div>
+          <div style="background:var(--color-bg);padding:10px 8px;font-size:12.5px">Волочильщик проволоки</div>
+          <div style="background:var(--color-bg);padding:10px 8px;font-size:12.5px">Сварщик труб на стане</div>
+          <div style="background:var(--color-bg);padding:10px 8px;font-size:12.5px">Контролёр в производстве</div>
+          <div style="background:var(--color-bg);padding:10px 8px;font-size:12.5px">Машинист крана</div>
+        </div>
+      </div>
+      <div style="display:flex;justify-content:space-between;align-items:center;padding:12px;border:1px solid var(--color-divider)"><span style="font:600 17px var(--font-heading)">Машиностроение</span><span style="font-size:12px;color:rgba(29,31,32,.5)">10 ›</span></div>
+      <div style="display:flex;justify-content:space-between;align-items:center;padding:12px;border:1px solid var(--color-divider)"><span style="font:600 17px var(--font-heading)">Информационные технологии</span><span style="font-size:12px;color:rgba(29,31,32,.5)">13 ›</span></div>
+      <div style="display:flex;justify-content:space-between;align-items:center;padding:12px;border:1px solid var(--color-divider)"><span style="font:600 17px var(--font-heading)">Туризм и сфера услуг</span><span style="font-size:12px;color:rgba(29,31,32,.5)">23 ›</span></div>
+      <div style="display:flex;justify-content:space-between;align-items:center;padding:12px;border:1px solid var(--color-divider)"><span style="font:600 17px var(--font-heading)">Атомная</span><span style="font-size:12px;color:rgba(29,31,32,.5)">10 ›</span></div>
+      <div style="display:flex;justify-content:space-between;align-items:center;padding:12px;border:1px solid var(--color-divider);opacity:.55"><span style="font:600 17px var(--font-heading)">Ещё 12 отраслей</span><span style="font-size:12px">⌄</span></div>
+    </div>
+  </div>
+</div>
+</div>
+
+<div class="dv-opt" id="1c">
+<div class="dv-olabel"><a class="dv-oid" href="#1c">1c</a>Карточка профессии, мобильная (полная прокрутка)</div>
+<div class="dv-card" style="width:390px">
+  <div style="display:flex;align-items:center;justify-content:space-between;padding:12px 16px;border-bottom:1px solid var(--color-divider)">
+    <div class="ph" style="width:26px;height:26px">←</div>
+    <div style="font:400 10px ui-monospace,Menlo,monospace;letter-spacing:.08em;color:rgba(29,31,32,.55)">КАРТА 47 · МЕТАЛЛУРГИЯ</div>
+    <div class="ph" style="width:26px;height:26px">☆</div>
+  </div>
+  <div style="padding:16px">
+    <h2 style="margin:0 0 4px;font-size:34px">Сталевар</h2>
+    <p style="font-size:13.5px;color:rgba(29,31,32,.65);margin:0 0 14px">Варит сталь в электропечи или конвертере: от загрузки лома до выпуска готовой плавки.</p>
+    <div class="blueprint duotone" style="margin-bottom:16px"><i class="corner tl"></i><i class="corner tr"></i><i class="corner bl"></i><i class="corner br"></i>
+      <div class="ph" style="height:180px">фото профессии<br>с карточки колоды</div>
+    </div>
+    <div class="blueprint" style="display:grid;grid-template-columns:1fr 1fr;gap:1px;background:var(--color-divider);margin-bottom:6px"><i class="corner tl"></i><i class="corner tr"></i><i class="corner bl"></i><i class="corner br"></i>
+      <div style="background:var(--color-bg);padding:12px"><div style="font:400 9.5px ui-monospace,monospace;letter-spacing:.08em;color:rgba(29,31,32,.55);margin-bottom:4px">ЗАРПЛАТА В РЕГИОНЕ</div><div style="font:600 20px var(--font-heading)">70–130 тыс ₽</div></div>
+      <div style="background:var(--color-bg);padding:12px"><div style="font:400 9.5px ui-monospace,monospace;letter-spacing:.08em;color:rgba(29,31,32,.55);margin-bottom:4px">УЧИТЬСЯ</div><div style="font:600 20px var(--font-heading)">2 г. 10 мес</div></div>
+    </div>
+
+    <div class="sec"><h6>Основной вид деятельности</h6><p>Выплавка стали заданной марки в сталеплавильном агрегате.</p></div>
+    <div class="sec"><h6>Что делает на рабочем месте</h6><ul>
+      <li>Загружает в печь металлолом, чугун и шлакообразующие материалы.</li>
+      <li>Ведёт плавку: следит за температурой, продувкой, составом ванны.</li>
+      <li>Берёт пробы металла и корректирует состав по результатам анализа.</li>
+      <li>Выпускает готовую сталь в ковш и следит за отделением шлака.</li>
+      <li>Контролирует состояние футеровки и оборудования печи.</li>
+    </ul></div>
+    <div class="sec"><h6>Что производит</h6><p>Жидкую сталь заданной марки — сырьё для проката, труб, рельсов и машиностроительных деталей.</p></div>
+    <div class="sec"><h6>Оборудование и инструменты</h6>
+      <div style="display:flex;flex-wrap:wrap;gap:6px;margin-bottom:8px">
+        <span class="tag tag-outline">Электродуговая печь</span><span class="tag tag-outline">Конвертер</span><span class="tag tag-outline">Сталеразливочный ковш</span><span class="tag tag-outline">Пробоотборник</span><span class="tag tag-outline">Кислородная фурма</span><span class="tag tag-outline">Пульт управления плавкой</span>
+      </div>
+    </div>
+    <div class="sec"><h6>Спецодежда и СИЗ</h6>
+      <div style="display:flex;gap:10px;align-items:flex-start">
+        <div class="ph" style="width:78px;height:96px;flex:none">пиктограмма<br>спецодежды</div>
+        <p style="margin:0">Суконный или алюминизированный костюм металлурга, каска с щитком из тёмного стекла, войлочная шляпа, термостойкие краги, респиратор, беруши.</p>
+      </div>
+    </div>
+    <div class="sec"><h6>Спецобувь</h6>
+      <div style="display:flex;gap:10px;align-items:flex-start">
+        <div class="ph" style="width:78px;height:60px;flex:none">пиктограмма<br>обуви</div>
+        <p style="margin:0">Термостойкие ботинки с металлическим подноском и глухим клапаном, чтобы искры и брызги металла не попадали внутрь.</p>
+      </div>
+    </div>
+    <div class="sec"><h6>Где учиться</h6>
+      <p style="margin-bottom:8px"><b>22.02.08</b> Металлургическое производство · ФГОС СПО</p>
+      <div style="display:flex;flex-direction:column;gap:6px">
+        <div style="border:1px solid var(--color-divider);padding:10px;font-size:12.5px">Колледж — название · город <span style="color:rgba(29,31,32,.5)">· бюджет</span></div>
+        <div style="border:1px solid var(--color-divider);padding:10px;font-size:12.5px">Колледж — название · город</div>
+        <a class="btn btn-ghost" href="#1c" style="align-self:flex-start;padding-left:0">Все заведения →</a>
+      </div>
+    </div>
+    <div class="sec"><h6>Где работать</h6>
+      <div style="display:flex;flex-wrap:wrap;gap:6px"><span class="tag tag-accent">Предприятие 1</span><span class="tag tag-accent">Предприятие 2</span><span class="tag tag-accent">Предприятие 3</span></div>
+    </div>
+    <div class="sec"><h6>Похожие профессии</h6>
+      <div style="display:flex;gap:8px;overflow:hidden">
+        <div style="border:1px solid var(--color-divider);padding:10px;min-width:120px;font:600 14px var(--font-heading)">Горновой доменной печи</div>
+        <div style="border:1px solid var(--color-divider);padding:10px;min-width:120px;font:600 14px var(--font-heading)">Вальцовщик стана</div>
+      </div>
+    </div>
+  </div>
+  <div style="position:sticky;bottom:0;display:flex;gap:8px;padding:10px 16px;border-top:1px solid var(--color-divider);background:var(--color-bg)">
+    <button class="btn btn-primary" style="flex:1;min-height:46px">Отметить, чтобы вернуться</button>
+    <button class="btn btn-secondary btn-icon" style="width:46px;height:46px">↗</button>
+  </div>
+</div>
+</div>
+
+<div class="dv-opt" id="1d">
+<div class="dv-olabel"><a class="dv-oid" href="#1d">1d</a>«Мои профессии» — история просмотров и закладки</div>
+<div class="dv-card" style="width:390px">
+  <div style="display:flex;align-items:center;gap:10px;padding:12px 16px;border-bottom:1px solid var(--color-divider)">
+    <div class="ph" style="width:26px;height:26px">←</div>
+    <div style="font:600 12px/1 var(--font-heading);letter-spacing:.1em;text-transform:uppercase">Мои профессии</div>
+  </div>
+  <div style="padding:16px">
+    <div class="blueprint" style="padding:12px;margin-bottom:18px"><i class="corner tl"></i><i class="corner tr"></i><i class="corner bl"></i><i class="corner br"></i>
+      <div style="font:600 17px var(--font-heading);margin-bottom:4px">Моя карта</div>
+      <div style="font-size:13px;color:rgba(29,31,32,.65)">Сталевар · Металлургия</div>
+    </div>
+    <div style="font:400 10px ui-monospace,Menlo,monospace;letter-spacing:.1em;text-transform:uppercase;color:rgba(29,31,32,.55);margin-bottom:8px">Отмечено, чтобы вернуться</div>
+    <div style="display:flex;flex-direction:column;gap:8px;margin-bottom:20px">
+      <div style="display:flex;gap:10px;border:1px solid var(--color-divider);padding:10px;align-items:center"><div class="ph" style="width:44px;height:56px;flex:none">фото</div><div style="flex:1"><div style="font:600 16px var(--font-heading)">Сталевар</div><div style="font-size:11.5px;color:rgba(29,31,32,.55)">Металлургия</div></div><div style="font-size:16px;color:var(--color-accent)">★</div></div>
+      <div style="display:flex;gap:10px;border:1px solid var(--color-divider);padding:10px;align-items:center"><div class="ph" style="width:44px;height:56px;flex:none">фото</div><div style="flex:1"><div style="font:600 16px var(--font-heading)">Логист</div><div style="font-size:11.5px;color:rgba(29,31,32,.55)">Транспорт и логистика</div></div><div style="font-size:16px;color:var(--color-accent)">★</div></div>
+    </div>
+    <div style="font:400 10px ui-monospace,Menlo,monospace;letter-spacing:.1em;text-transform:uppercase;color:rgba(29,31,32,.55);margin-bottom:8px">Недавно смотрел</div>
+    <div style="display:flex;flex-direction:column;gap:8px;margin-bottom:20px">
+      <div style="display:flex;gap:10px;border:1px solid var(--color-divider);padding:10px;align-items:center"><div class="ph" style="width:44px;height:56px;flex:none">фото</div><div style="flex:1"><div style="font:600 16px var(--font-heading)">Инженер-проектировщик</div><div style="font-size:11.5px;color:rgba(29,31,32,.55)">Строительство и архитектура</div></div><div style="font-size:16px;color:rgba(29,31,32,.3)">☆</div></div>
+      <div style="display:flex;gap:10px;border:1px solid var(--color-divider);padding:10px;align-items:center"><div class="ph" style="width:44px;height:56px;flex:none">фото</div><div style="flex:1"><div style="font:600 16px var(--font-heading)">Оператор БПЛА</div><div style="font-size:11.5px;color:rgba(29,31,32,.55)">Транспорт и логистика</div></div><div style="font-size:16px;color:rgba(29,31,32,.3)">☆</div></div>
+    </div>
+    <a class="btn btn-secondary btn-block" href="#1a" style="min-height:46px">Найти ещё одну профессию</a>
+    <p style="font-size:11px;color:rgba(29,31,32,.5);margin-top:14px">Список хранится только в этом браузере — без регистрации. Порядок — по времени просмотра, никаких рейтингов.</p>
+  </div>
+</div>
+</div>
+
+<div class="dv-opt" id="1e">
+<div class="dv-olabel"><a class="dv-oid" href="#1e">1e</a>Карточка профессии, десктоп / планшет</div>
+<div class="dv-card" style="width:1120px">
+  <div style="display:flex;align-items:center;justify-content:space-between;padding:14px 28px;border-bottom:1px solid var(--color-divider)">
+    <div style="font:600 13px/1 var(--font-heading);letter-spacing:.1em;text-transform:uppercase">Электронный каталог профессий</div>
+    <div style="display:flex;gap:12px;align-items:center"><input class="input" value="Поиск профессии" style="width:280px;color:rgba(29,31,32,.45)"><a class="btn btn-secondary" href="#1b">Отрасли</a><a class="btn btn-secondary" href="#1d">Мои профессии</a></div>
+  </div>
+  <div style="padding:24px 28px 32px">
+    <div style="font:400 10px ui-monospace,monospace;letter-spacing:.1em;color:rgba(29,31,32,.55);margin-bottom:10px">КАТАЛОГ / МЕТАЛЛУРГИЯ / КАРТА 47</div>
+    <div style="display:grid;grid-template-columns:400px 1fr;gap:32px;align-items:start">
+      <div style="display:flex;flex-direction:column;gap:16px;position:sticky;top:0">
+        <div class="blueprint duotone"><i class="corner tl"></i><i class="corner tr"></i><i class="corner bl"></i><i class="corner br"></i><div class="ph" style="height:300px">фото профессии</div></div>
+        <div class="blueprint" style="display:grid;grid-template-columns:1fr 1fr;gap:1px;background:var(--color-divider)"><i class="corner tl"></i><i class="corner tr"></i><i class="corner bl"></i><i class="corner br"></i>
+          <div style="background:var(--color-bg);padding:14px"><div style="font:400 9.5px ui-monospace,monospace;letter-spacing:.08em;color:rgba(29,31,32,.55)">ЗАРПЛАТА В РЕГИОНЕ</div><div style="font:600 24px var(--font-heading)">70–130 тыс ₽</div></div>
+          <div style="background:var(--color-bg);padding:14px"><div style="font:400 9.5px ui-monospace,monospace;letter-spacing:.08em;color:rgba(29,31,32,.55)">СРОК ОБУЧЕНИЯ</div><div style="font:600 24px var(--font-heading)">2 г. 10 мес</div></div>
+          <div style="background:var(--color-bg);padding:14px"><div style="font:400 9.5px ui-monospace,monospace;letter-spacing:.08em;color:rgba(29,31,32,.55)">ОТРАСЛЬ</div><div style="font:600 18px var(--font-heading)">Металлургия</div></div>
+          <div style="background:var(--color-bg);padding:14px"><div style="font:400 9.5px ui-monospace,monospace;letter-spacing:.08em;color:rgba(29,31,32,.55)">ФГОС СПО</div><div style="font:600 18px var(--font-heading)">22.02.08</div></div>
+        </div>
+        <button class="btn btn-primary btn-block blueprint" style="min-height:46px"><i class="corner tl"></i><i class="corner tr"></i><i class="corner bl"></i><i class="corner br"></i>Отметить, чтобы вернуться</button>
+      </div>
+      <div>
+        <h1 style="margin:0 0 6px">Сталевар</h1>
+        <p style="font-size:16px;color:rgba(29,31,32,.65);max-width:60ch">Варит сталь в электропечи или конвертере: от загрузки лома до выпуска готовой плавки. Один из самых горячих участков завода — и один из самых ответственных.</p>
+        <div style="display:grid;grid-template-columns:1fr 1fr;gap:0 32px;margin-top:12px">
+          <div class="sec"><h6>Основной вид деятельности</h6><p>Выплавка стали заданной марки в сталеплавильном агрегате.</p></div>
+          <div class="sec"><h6>Что производит</h6><p>Жидкую сталь — сырьё для проката, труб, рельсов и машиностроительных деталей.</p></div>
+          <div class="sec" style="grid-column:1/-1"><h6>Что делает на рабочем месте</h6><ul style="columns:2;column-gap:32px">
+            <li>Загружает в печь металлолом, чугун и шлакообразующие материалы.</li>
+            <li>Ведёт плавку: следит за температурой, продувкой, составом ванны.</li>
+            <li>Берёт пробы металла и корректирует состав по анализу.</li>
+            <li>Выпускает сталь в ковш, отделяет шлак.</li>
+            <li>Контролирует состояние футеровки и оборудования печи.</li>
+          </ul></div>
+          <div class="sec" style="grid-column:1/-1"><h6>Оборудование и инструменты</h6>
+            <div style="display:flex;flex-wrap:wrap;gap:6px"><span class="tag tag-outline">Электродуговая печь</span><span class="tag tag-outline">Конвертер</span><span class="tag tag-outline">Сталеразливочный ковш</span><span class="tag tag-outline">Пробоотборник</span><span class="tag tag-outline">Кислородная фурма</span><span class="tag tag-outline">Пульт управления плавкой</span></div>
+          </div>
+          <div class="sec"><h6>Спецодежда и СИЗ</h6><div style="display:flex;gap:12px"><div class="ph" style="width:90px;height:110px;flex:none">пиктограмма</div><p style="margin:0">Суконный или алюминизированный костюм, каска со щитком из тёмного стекла, войлочная шляпа, термостойкие краги, респиратор, беруши.</p></div></div>
+          <div class="sec"><h6>Спецобувь</h6><div style="display:flex;gap:12px"><div class="ph" style="width:90px;height:110px;flex:none">пиктограмма</div><p style="margin:0">Термостойкие ботинки с металлическим подноском и глухим клапаном — искры и брызги металла не попадают внутрь.</p></div></div>
+          <div class="sec" style="grid-column:1/-1"><h6>Где учиться</h6>
+            <div style="display:grid;grid-template-columns:repeat(3,1fr);gap:8px">
+              <div style="border:1px solid var(--color-divider);padding:12px;font-size:13px">Колледж — название · город</div>
+              <div style="border:1px solid var(--color-divider);padding:12px;font-size:13px">Колледж — название · город</div>
+              <div style="border:1px solid var(--color-divider);padding:12px;font-size:13px">Колледж — название · город</div>
+            </div>
+          </div>
+          <div class="sec" style="grid-column:1/-1"><h6>Где работать</h6><div style="display:flex;flex-wrap:wrap;gap:6px"><span class="tag tag-accent">Предприятие 1</span><span class="tag tag-accent">Предприятие 2</span><span class="tag tag-accent">Предприятие 3</span><span class="tag tag-accent">Предприятие 4</span></div></div>
+          <div class="sec" style="grid-column:1/-1"><h6>Похожие профессии</h6>
+            <div style="display:grid;grid-template-columns:repeat(4,1fr);gap:8px">
+              <div style="border:1px solid var(--color-divider);padding:12px;font:600 15px var(--font-heading)">Горновой доменной печи</div>
+              <div style="border:1px solid var(--color-divider);padding:12px;font:600 15px var(--font-heading)">Газовщик доменной печи</div>
+              <div style="border:1px solid var(--color-divider);padding:12px;font:600 15px var(--font-heading)">Вальцовщик стана</div>
+              <div style="border:1px solid var(--color-divider);padding:12px;font:600 15px var(--font-heading)">Машинист крана</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+
+</div>
+<p class="dv-next">Дальше можно: «сделать <a class="dv-oid" href="#1a">1a</a> с вводом номера карты» · «показать экран “профессия не найдена”» · «другой вариант структуры карточки <a class="dv-oid" href="#1c">1c</a>»</p>
+</section>
+</x-dc>
+</body>
+</html>

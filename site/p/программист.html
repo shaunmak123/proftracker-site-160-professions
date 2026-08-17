@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<title>Программист — Электронный каталог профессий</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="Программист: чем занимается, сколько зарабатывает в регионе, где учиться и где работать.">
+<link rel="stylesheet" href="../styles.css">
+<link rel="stylesheet" href="../page.css">
+</head>
+<body>
+
+<header class="topbar">
+  <button class="icon-btn" type="button" aria-label="Назад" title="Каталог появится позже">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M19 12H5"/><path d="M12 19l-7-7 7-7"/></svg>
+  </button>
+  <div class="crumb">КАРТА 87 · ИНФОРМАЦИОННЫЕ ТЕХНОЛОГИИ</div>
+  <button class="icon-btn" type="button" id="bookmark-btn" aria-label="Отметить, чтобы вернуться" aria-pressed="false">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+  </button>
+</header>
+
+<main class="profession">
+
+  <div class="profession-media">
+    <figure class="blueprint duotone profession-photo">
+      <i class="corner tl"></i><i class="corner tr"></i><i class="corner bl"></i><i class="corner br"></i>
+      <div class="ph">фото профессии<br>с карточки колоды<br>(Программист.jpg)</div>
+    </figure>
+
+    <div class="blueprint stat-grid">
+      <i class="corner tl"></i><i class="corner tr"></i><i class="corner bl"></i><i class="corner br"></i>
+      <div class="stat">
+        <div class="stat-label">Зарплата в регионе</div>
+        <div class="stat-value">90–220 тыс ₽</div>
+      </div>
+      <div class="stat">
+        <div class="stat-label">Отрасль</div>
+        <div class="stat-value" style="font-size:16px">ИТ</div>
+      </div>
+      <div class="stat">
+        <div class="stat-label">Уровень образования</div>
+        <div class="stat-value" style="font-size:16px">СПО</div>
+      </div>
+      <div class="stat">
+        <div class="stat-label">ФГОС</div>
+        <div class="stat-value" style="font-size:16px">09.02.07 + 3</div>
+      </div>
+    </div>
+
+    <button class="btn btn-primary btn-block blueprint desktop-cta" type="button">
+      <i class="corner tl"></i><i class="corner tr"></i><i class="corner bl"></i><i class="corner br"></i>
+      Отметить, чтобы вернуться
+    </button>
+  </div>
+
+  <div class="profession-main">
+    <h1 class="p-title">Программист</h1>
+    <p class="p-short">Пишет код, который делает работу за людей.</p>
+
+    <div class="sections">
+      <div class="sec">
+        <h6>Основной вид деятельности</h6>
+        <p>Разработка, отладка, проверка работоспособности и модификация компьютерного программного обеспечения.</p>
+      </div>
+
+      <div class="sec">
+        <h6>Что производит</h6>
+        <p>Создаёт компьютерные программы, сайты, веб-сервисы и мобильные приложения с помощью языков программирования — Python, C, C++, Go, Java, JS, Swift и других.</p>
+      </div>
+
+      <div class="sec span-2">
+        <h6>Оборудование и инструменты</h6>
+        <div class="equip-tags">
+          <span class="tag tag-outline">Компьютер или ноутбук</span>
+        </div>
+      </div>
+
+      <div class="sec">
+        <h6>Спецодежда</h6>
+        <div class="wear-row clothing">
+          <div class="ph">пиктограмма<br>одежды</div>
+          <p>Обычная одежда: брюки, джинсы, футболка, рубашка — дресс-код не строгий.</p>
+        </div>
+      </div>
+
+      <div class="sec">
+        <h6>Обувь</h6>
+        <div class="wear-row footwear">
+          <div class="ph">пиктограмма<br>обуви</div>
+          <p>Кроссовки, ботинки, туфли — на выбор, без спецтребований.</p>
+        </div>
+      </div>
+
+      <div class="sec span-2">
+        <h6>Где учиться</h6>
+        <p style="margin-bottom:var(--space-2)">ФГОС СПО, любая из специальностей готовит к этой профессии:</p>
+        <ul class="fgos-list">
+          <li><b>09.02.07</b> Информационные системы и программирование</li>
+          <li><b>09.02.05</b> Прикладная информатика</li>
+          <li><b>09.02.03</b> Программирование в компьютерных системах</li>
+          <li><b>44.02.06</b> Профессиональное обучение: программирование в компьютерных системах</li>
+        </ul>
+      </div>
+
+      <div class="sec span-2">
+        <h6>Где работать</h6>
+        <div class="employer-tags">
+          <span class="tag tag-accent">IT-компании и интеграторы</span>
+          <span class="tag tag-accent">Банки и телеком</span>
+          <span class="tag tag-accent">Цифровые подразделения промышленных предприятий</span>
+          <span class="tag tag-accent">Госорганизации</span>
+          <span class="tag tag-accent">Продуктовые стартапы</span>
+        </div>
+      </div>
+
+      <div class="sec span-2">
+        <h6>Похожие профессии</h6>
+        <div class="similar-rail">
+          <div class="similar-card">Специалист по анализу больших данных</div>
+          <div class="similar-card">Администратор баз данных</div>
+          <div class="similar-card">Аналитик компьютерных систем</div>
+        </div>
+      </div>
+    </div>
+
+    <p class="data-note">Данные — карточка 87 из 160, отрасль «Информационные технологии». Зарплата — оценочная вилка по региону, требует сверки.</p>
+  </div>
+
+</main>
+
+<div class="action-bar">
+  <button class="btn btn-primary" type="button" id="bookmark-btn-mobile">Отметить, чтобы вернуться</button>
+  <button class="btn btn-secondary btn-icon" type="button" aria-label="Поделиться">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M18 8a3 3 0 1 0-2.83-4H15a3 3 0 0 0 .05 3.9L8.91 11.6a3 3 0 1 0 0 4.8l6.14 3.7a3 3 0 1 0 .77-1.71L9.7 14.7a3 3 0 0 0 0-1.4l6.12-3.68A3 3 0 0 0 18 8Z"/></svg>
+  </button>
+</div>
+
+<script>
+  // Bookmark: mirrors the two entry points (header star, bottom bar) to one
+  // localStorage-backed state, per the design handoff's no-backend model.
+  (function () {
+    var SLUG = 'программист';
+    var KEY = 'proftracker:bookmarks';
+
+    function readBookmarks() {
+      try { return JSON.parse(localStorage.getItem(KEY)) || []; }
+      catch (e) { return []; }
+    }
+    function writeBookmarks(list) {
+      localStorage.setItem(KEY, JSON.stringify(list));
+    }
+    function isBookmarked() {
+      return readBookmarks().indexOf(SLUG) !== -1;
+    }
+    function toggleBookmark() {
+      var list = readBookmarks();
+      var i = list.indexOf(SLUG);
+      if (i === -1) { list.unshift(SLUG); } else { list.splice(i, 1); }
+      writeBookmarks(list);
+      render();
+    }
+    function render() {
+      var on = isBookmarked();
+      var headerBtn = document.getElementById('bookmark-btn');
+      var mobileBtn = document.getElementById('bookmark-btn-mobile');
+      headerBtn.setAttribute('aria-pressed', String(on));
+      headerBtn.querySelector('svg').setAttribute('fill', on ? 'currentColor' : 'none');
+      mobileBtn.textContent = on ? 'Отмечено — вернуться позже' : 'Отметить, чтобы вернуться';
+    }
+
+    document.getElementById('bookmark-btn').addEventListener('click', toggleBookmark);
+    document.getElementById('bookmark-btn-mobile').addEventListener('click', toggleBookmark);
+    render();
+
+    // "Recently viewed", LRU capped at 20, per the handoff's state model.
+    try {
+      var HKEY = 'proftracker:recent';
+      var recent = JSON.parse(localStorage.getItem(HKEY)) || [];
+      recent = recent.filter(function (s) { return s !== SLUG; });
+      recent.unshift(SLUG);
+      if (recent.length > 20) recent = recent.slice(0, 20);
+      localStorage.setItem(HKEY, JSON.stringify(recent));
+    } catch (e) {}
+  })();
+</script>
+
+</body>
+</html>
