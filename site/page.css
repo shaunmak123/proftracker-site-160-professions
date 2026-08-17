@@ -20,7 +20,7 @@ body { margin: 0; }
 
 /* — header — */
 .topbar {
-  position: sticky; top: 0; z-index: 10;
+  position: sticky; top: 70px; z-index: 10;
   display: flex; align-items: center; justify-content: space-between;
   gap: var(--space-3);
   padding: var(--space-3) var(--space-4);
@@ -52,10 +52,14 @@ body { margin: 0; }
 .profession-photo .ph { height: 180px; }
 .profession-photo.has-photo {
   background: var(--color-surface); text-align: center; overflow: hidden;
+  border-radius: 22px;
 }
 .profession-photo.has-photo img {
-  display: block; margin: 0 auto; width: 100%; height: auto; max-height: 460px; object-fit: contain;
+  display: block; margin: 0 auto; width: 100%; height: auto; object-fit: contain;
 }
+
+/* — партнёр проекта на карточке профессии: под блоком зарплаты/отрасли — */
+.profession-partner { border-top: none; margin-top: 0; }
 
 .stat-grid {
   display: grid; grid-template-columns: 1fr 1fr; gap: 1px;
