@@ -45,7 +45,9 @@ body { margin: 0; }
   background: linear-gradient(180deg, var(--color-accent-100), var(--color-bg) 90%);
   overflow: hidden;
 }
-.hero-figure img { height: 94%; width: auto; max-width: 92%; object-fit: contain; }
+.hero-figure img { width: auto; max-width: 55%; object-fit: contain; }
+.hero-figure-girl { height: 80%; margin-right: -22px; }
+.hero-figure-boy { height: 94%; z-index: 1; }
 
 .start .kicker { margin-top: var(--space-2); }
 .start h2 { font-size: 30px; line-height: 1.12; }
