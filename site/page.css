@@ -126,9 +126,9 @@ body { margin: 0; }
   -webkit-mask-position: center; mask-position: center;
   -webkit-mask-size: contain; mask-size: contain;
 }
-.wear-icon-clothing { -webkit-mask-image: url('../assets/img/icons/spetsodezhda.png'); mask-image: url('../assets/img/icons/spetsodezhda.png'); }
-.wear-icon-footwear { -webkit-mask-image: url('../assets/img/icons/spetsobuv.png'); mask-image: url('../assets/img/icons/spetsobuv.png'); }
-.wear-icon-siz { -webkit-mask-image: url('../assets/img/icons/siz.png'); mask-image: url('../assets/img/icons/siz.png'); }
+.wear-icon-clothing { -webkit-mask-image: url('assets/img/icons/spetsodezhda.png'); mask-image: url('assets/img/icons/spetsodezhda.png'); }
+.wear-icon-footwear { -webkit-mask-image: url('assets/img/icons/spetsobuv.png'); mask-image: url('assets/img/icons/spetsobuv.png'); }
+.wear-icon-siz { -webkit-mask-image: url('assets/img/icons/siz.png'); mask-image: url('assets/img/icons/siz.png'); }
 .wear-row p { margin: 0; }
 .wear-items { display: flex; flex-direction: column; gap: 6px; }
 .wear-item { margin: 0; font-size: 13px; }
