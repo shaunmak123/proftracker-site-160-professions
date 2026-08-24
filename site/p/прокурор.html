@@ -5,6 +5,9 @@
 <title>Прокурор — Электронный каталог профессий</title>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="description" content="Прокурор: чем занимается, сколько зарабатывает в регионе, где учиться и где работать.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700&family=Roboto:wght@400;700&family=Roboto+Mono:wght@400;700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="../styles.css">
 <link rel="stylesheet" href="../page.css">
 </head>
@@ -13,28 +16,35 @@
 <div class="top-brand-bar">
   <img src="../assets/img/logo-dvizhenie-pervyh.svg" alt="Движение Первых · Гранты Первых" class="top-brand-logo">
   <img src="../assets/img/logo-proftracker.svg" alt="АНО «ПРОФТРЕКЕР»" class="top-brand-logo">
+  <div class="top-brand-actions">
+    <a class="home-btn" href="../index.html" aria-label="На главную" title="На главную">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M3 11.5 12 4l9 7.5"/><path d="M5.5 9.5V20h13V9.5"/></svg>
+    </a>
+    <a class="vk-btn" href="https://vk.ru/proftreker" target="_blank" rel="noopener" aria-label="Сообщество ВКонтакте" title="Мы ВКонтакте">VK</a>
+  </div>
 </div>
 
 <header class="topbar">
   <button class="icon-btn" type="button" onclick="history.length>1?history.back():location.href='../catalog.html'" aria-label="Назад">
     <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M19 12H5"/><path d="M12 19l-7-7 7-7"/></svg>
   </button>
-  <div class="crumb">КАРТА 137 · БЕЗОПАСНОСТЬ</div>
   <button class="icon-btn" type="button" id="bookmark-btn" aria-label="Отметить, чтобы вернуться" aria-pressed="false">
     <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
   </button>
 </header>
 
 <main class="profession">
+  <div class="folder-tab">Прокурор</div>
+  <div class="profession-sheet">
 
   <div class="profession-media">
-    <figure class="blueprint profession-photo has-photo">
-      <i class="corner tl"></i><i class="corner tr"></i><i class="corner bl"></i><i class="corner br"></i>
-      <img src="../assets/img/photos/прокурор.png" alt="Карточка профессии «Прокурор»" loading="lazy">
+    <figure class="profession-photo has-photo">
+      <div class="photo-frame">
+        <img src="../assets/img/photos/прокурор.png" alt="Карточка профессии «Прокурор»" loading="lazy">
+      </div>
     </figure>
 
-    <div class="blueprint stat-grid">
-      <i class="corner tl"></i><i class="corner tr"></i><i class="corner bl"></i><i class="corner br"></i>
+    <div class="stat-grid">
       <div class="stat">
         <div class="stat-label">Зарплата в регионе</div>
         <div class="stat-value" style="font-size:18px">80–150 тыс ₽</div>
@@ -46,34 +56,39 @@
     </div>
 
     <div class="partner-figure profession-partner">
-      <img src="../assets/img/logo-evraz.svg" alt="ЕВРАЗ" class="partner-logo">
+      <span class="partner-logo-zone">
+        <img src="../assets/img/logo-evraz.svg" alt="ЕВРАЗ" class="partner-logo">
+      </span>
       <span class="partner-label">Партнёр проекта</span>
     </div>
+    <div class="partner-caption">
+      <img src="../assets/img/evraz-caption.svg" alt="" class="partner-caption-img">
+    </div>
 
-    <button class="btn btn-primary btn-block blueprint desktop-cta" type="button" id="bookmark-btn-desktop">
-      <i class="corner tl"></i><i class="corner tr"></i><i class="corner bl"></i><i class="corner br"></i>
+    <button class="btn btn-primary btn-block desktop-cta" type="button" id="bookmark-btn-desktop">
       Отметить, чтобы вернуться
     </button>
   </div>
 
   <div class="profession-main">
+    <p class="crumb" style="margin-bottom:6px">БЕЗОПАСНОСТЬ</p>
     <h1 class="p-title">Прокурор</h1>
     <p class="p-short">Поддерживает обвинение и следит за законностью.</p>
 
     <div class="sections">
-      <div class="sec">
+      <div class="sec span-2">
         <h6>Основной вид деятельности</h6>
         <p>Лицо, уполномоченное представлять обвинение в суде, а также следить за соблюдением законности практически во всех сферах жизни страны.</p>
       </div>
 
-      <div class="sec">
+      <div class="sec span-2">
         <h6>Что делает на рабочем месте</h6>
         <p>Прокурор от имени государства поддерживает обвинение в суде по уголовным делам, представляя доказательства виновности подсудимого и требуя справедливого наказания в рамках закона. Осуществляет надзор за процессуальной деятельностью органов дознания и следствия, проверяя, не нарушены ли права подозреваемых и обвиняемых в ходе расследования. Участвует в рассмотрении гражданских и арбитражных дел, а если решение суда противоречит закону — опротестовывает приговор, определение или постановление в вышестоящей инстанции. Контролирует исполнение законов органами местного самоуправления, Следственным комитетом, ФСИН и другими организациями, следя, чтобы государственные структуры действовали в рамках правового поля. Работает с уголовным и гражданским кодексами, изучая материалы дел и судебную практику по аналогичным ситуациям. Носит форменную одежду прокурорского работника — рубашку светлых тонов, тёмный галстук, а зимой пальто с позолоченными пуговицами, — которая подчёркивает официальный статус на заседании суда.</p>
       </div>
 
       <div class="sec span-2">
         <h6>Что производит</h6>
-        <p>Участвуют в рассмотрении дел судами, арбитражными судами (далее - суды), опротестовывают противоречащие закону решения, приговоры, определения и постановления судов. Контролирует исполнение законов Российской Федерации. В поле контроля попадают органы местного самоуправления, Следственный комитет, ФСИН и другие организации. Так, прокуратура следит практически за всеми крупными организациями на территории России.</p>
+        <p>Участие в рассмотрении дел судами и арбитражными судами, протесты против решений, приговоров и постановлений, которые противоречат закону, а также контроль исполнения законов органами местного самоуправления, Следственным комитетом, ФСИН и другими организациями.</p>
       </div>
 
       <div class="sec span-2">
@@ -83,25 +98,50 @@
         </div>
       </div>
 
-      <div class="sec">
-        <h6>Спецодежда и СИЗ</h6>
+      <div class="sec sec-clothing">
+        <h6>Спецодежда</h6>
         <div class="wear-row clothing">
-          <div class="ph">пиктограмма<br>одежды</div>
-          <p>Рубашка белого и светло-синего цвета с мягким или жестким воротником. Для летней формы одежды вместо пиджака выдается рубашка с пояском светло-синего цвета, для женщин - блуза. Галстук черного или темно-синего цвета. Пальто с шестью позолоченными пуговицами и четырьмя позолоченными пуговицами на хлястике.</p>
+          <div class="wear-icon wear-icon-clothing" role="img" aria-label="Спецодежда"></div>
+          <div class="wear-items">
+          <p class="wear-item">Рубашка белого и светло-синего цвета с мягким или жестким воротником</p>
+          <p class="wear-item">Для летней формы одежды вместо пиджака выдается рубашка с пояском светло-синего цвета, для женщин — блуза</p>
+          <p class="wear-item">Галстук черного или темно-синего цвета</p>
+          <p class="wear-item">Пальто с шестью позолоченными пуговицами и четырьмя позолоченными пуговицами на хлястике</p>
+          </div>
         </div>
       </div>
 
-      <div class="sec">
+      <div class="sec sec-footwear">
         <h6>Спецобувь</h6>
         <div class="wear-row footwear">
-          <div class="ph">пиктограмма<br>обуви</div>
-          <p>Полуботинки из натуральной кожи (для женского пола — туфли). Полусапоги из натуральной кожи и с утеплителем (для прокуроров женского пола — сапоги)</p>
+          <div class="wear-icon wear-icon-footwear" role="img" aria-label="Спецобувь"></div>
+          <div class="wear-items">
+          <p class="wear-item">Полуботинки из натуральной кожи (для женского пола — туфли). Полусапоги из натуральной кожи и с утеплителем (для прокуроров женского пола — сапоги)</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="sec sec-siz">
+        <h6>СИЗ</h6>
+        <div class="wear-row siz">
+          
+          <div class="wear-items">
+          <p class="wear-item wear-item-muted">Для этой профессии специальные средства защиты не требуются.</p>
+          </div>
         </div>
       </div>
 
       <div class="sec span-2">
         <h6>Где учиться</h6>
-        <p>ВО</p>
+        <p class="edu-hint">Это официальное название и номер специальности в колледже или вузе — он понадобится при поступлении.</p>
+        <div class="edu-list">
+        <div class="edu-row">
+            
+            <span class="edu-name">ВО</span>
+          </div>
+        
+        
+        </div>
       </div>
 
       <div class="sec span-2">
@@ -122,9 +162,10 @@
       </div>
     </div>
 
-    <p class="data-note">Данные — карточка 137 из 160, отрасль «Безопасность». Зарплата — оценочная вилка по региону.</p>
+    <p class="data-note">Данные по профессии «Прокурор», отрасль «Безопасность». Зарплата — оценочная вилка по региону.</p>
   </div>
 
+  </div>
 </main>
 
 <div class="action-bar">

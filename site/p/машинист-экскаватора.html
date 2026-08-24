@@ -5,6 +5,9 @@
 <title>Машинист экскаватора — Электронный каталог профессий</title>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="description" content="Машинист экскаватора: чем занимается, сколько зарабатывает в регионе, где учиться и где работать.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700&family=Roboto:wght@400;700&family=Roboto+Mono:wght@400;700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="../styles.css">
 <link rel="stylesheet" href="../page.css">
 </head>
@@ -13,28 +16,35 @@
 <div class="top-brand-bar">
   <img src="../assets/img/logo-dvizhenie-pervyh.svg" alt="Движение Первых · Гранты Первых" class="top-brand-logo">
   <img src="../assets/img/logo-proftracker.svg" alt="АНО «ПРОФТРЕКЕР»" class="top-brand-logo">
+  <div class="top-brand-actions">
+    <a class="home-btn" href="../index.html" aria-label="На главную" title="На главную">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M3 11.5 12 4l9 7.5"/><path d="M5.5 9.5V20h13V9.5"/></svg>
+    </a>
+    <a class="vk-btn" href="https://vk.ru/proftreker" target="_blank" rel="noopener" aria-label="Сообщество ВКонтакте" title="Мы ВКонтакте">VK</a>
+  </div>
 </div>
 
 <header class="topbar">
   <button class="icon-btn" type="button" onclick="history.length>1?history.back():location.href='../catalog.html'" aria-label="Назад">
     <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M19 12H5"/><path d="M12 19l-7-7 7-7"/></svg>
   </button>
-  <div class="crumb">КАРТА 21 · ТРАНСПОРТ И ЛОГИСТИКА</div>
   <button class="icon-btn" type="button" id="bookmark-btn" aria-label="Отметить, чтобы вернуться" aria-pressed="false">
     <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
   </button>
 </header>
 
 <main class="profession">
+  <div class="folder-tab">Машинист экскаватора</div>
+  <div class="profession-sheet">
 
   <div class="profession-media">
-    <figure class="blueprint profession-photo has-photo">
-      <i class="corner tl"></i><i class="corner tr"></i><i class="corner bl"></i><i class="corner br"></i>
-      <img src="../assets/img/photos/машинист-экскаватора.png" alt="Карточка профессии «Машинист экскаватора»" loading="lazy">
+    <figure class="profession-photo has-photo">
+      <div class="photo-frame">
+        <img src="../assets/img/photos/машинист-экскаватора.png" alt="Карточка профессии «Машинист экскаватора»" loading="lazy">
+      </div>
     </figure>
 
-    <div class="blueprint stat-grid">
-      <i class="corner tl"></i><i class="corner tr"></i><i class="corner bl"></i><i class="corner br"></i>
+    <div class="stat-grid">
       <div class="stat">
         <div class="stat-label">Зарплата в регионе</div>
         <div class="stat-value" style="font-size:18px">70–130 тыс ₽</div>
@@ -46,40 +56,39 @@
     </div>
 
     <div class="partner-figure profession-partner">
-      <img src="../assets/img/logo-evraz.svg" alt="ЕВРАЗ" class="partner-logo">
+      <span class="partner-logo-zone">
+        <img src="../assets/img/logo-evraz.svg" alt="ЕВРАЗ" class="partner-logo">
+      </span>
       <span class="partner-label">Партнёр проекта</span>
     </div>
+    <div class="partner-caption">
+      <img src="../assets/img/evraz-caption.svg" alt="" class="partner-caption-img">
+    </div>
 
-    <button class="btn btn-primary btn-block blueprint desktop-cta" type="button" id="bookmark-btn-desktop">
-      <i class="corner tl"></i><i class="corner tr"></i><i class="corner bl"></i><i class="corner br"></i>
+    <button class="btn btn-primary btn-block desktop-cta" type="button" id="bookmark-btn-desktop">
       Отметить, чтобы вернуться
     </button>
   </div>
 
   <div class="profession-main">
+    <p class="crumb" style="margin-bottom:6px">ТРАНСПОРТ И ЛОГИСТИКА</p>
     <h1 class="p-title">Машинист экскаватора</h1>
     <p class="p-short">Копает экскаватором котлованы и грузит породу.</p>
 
     <div class="sections">
-      <div class="sec">
+      <div class="sec span-2">
         <h6>Основной вид деятельности</h6>
         <p>Управляет экскаватором — копает котлованы, траншеи и грузит породу на строительных и земляных работах.</p>
       </div>
 
-      <div class="sec">
+      <div class="sec span-2">
         <h6>Что делает на рабочем месте</h6>
         <p>Машинист экскаватора рычагами и педалями поднимает, опускает и поворачивает стрелу с ковшом, копая траншеи под коммуникации, котлованы под фундамент или загружая породу в самосвалы. Ковши на экскаваторе бывают разной формы и объёма, и машинист подбирает нужный под задачу — узкий для траншеи, широкий для перемещения больших объёмов грунта. Работает по чертежам и техническим схемам, а точность особенно важна рядом с уже проложенными трубами или кабелями, где одно неверное движение ковша может обернуться аварией. Каждую смену проверяет техническое состояние машины — уровень масла, состояние гидравлики, изношенные детали — и мелкий ремонт делает сам. Носит сигнальный жилет, каску, защитные очки и наушники от шума двигателя, а в комплекте экипировки есть и самоспасатель на случай нештатной ситуации. Работает на стройплощадках и в карьерах в любую погоду, а зимой переходит на утеплённый костюм и валенки с резиновым низом.</p>
       </div>
 
       <div class="sec span-2">
         <h6>Что производит</h6>
-        <p>Управление экскаватором: Машинист экскаватора ответственен за управление экскаватором, используя рычаги и педали для выполнения различных движений, таких как копка, поднятие, опускание, поворот и передвижение.
-Земельные работы: Машинист экскаватора применяет экскаватор для копки, выемки и перемещения земли, камней, песка или других материалов в соответствии с требованиями проекта.
-Поднятие и перемещение грузов: Экскаваторы могут использоваться для поднятия и перемещения тяжелых грузов и строительных материалов на стройплощадке.
-Работа с ковшом: Машинист экскаватора использует ковш экскаватора для сбора, перемещения и выгрузки материалов. Ковш может иметь различные формы и размеры в зависимости от задачи.
-Точность и аккуратность: Машинист экскаватора должен обладать навыками точного и аккуратного выполнения работ, особенно при работе вблизи других строительных объектов или при выполнении детальных задач.
-Соблюдение безопасности: Машинист экскаватора обязан соблюдать правила и меры безопасности при эксплуатации машины, чтобы предотвращать возможные происшествия и обеспечивать безопасные условия труда.
-Техническое обслуживание: Машинист экскаватора также отвечает за регулярное техническое обслуживание экскаватора, включая проверку состояния машины, смазку, замену изношенных деталей и другие рутинные процедуры.</p>
+        <p>Вырытый котлован и погруженная в транспорт порода — результат работы экскаватора на стройке или в карьере.</p>
       </div>
 
       <div class="sec span-2">
@@ -89,45 +98,66 @@
         </div>
       </div>
 
-      <div class="sec">
-        <h6>Спецодежда и СИЗ</h6>
+      <div class="sec sec-clothing">
+        <h6>Спецодежда</h6>
         <div class="wear-row clothing">
-          <div class="ph">пиктограмма<br>одежды</div>
-          <p>Костюм для защиты от общих производственных загрязнений и механических воздействий
-Белье нательное 
-Жилет сигнальный 2 класса защиты
-Перчатки с полимерным покрытием 
-Перчатки диэлектрические
-Каска защитная 
-Подшлемник под каску 
-Очки защитные 
-Наушники противошумные (с креплением на каску) или Вкладыши противошумные до износа
-Средство индивидуальной защиты органов дыхания (СИЗОД) противоаэрозольное
-Самоспасатель
-Зимой дополнительно:
-Костюм на утепляющей прокладке 
-Белье нательное утепленное 
-Подшлемник утепленный (с однослойным или трехслойным утеплителем)
-Перчатки с защитным покрытием морозостойкие с утепляющими вкладышами</p>
+          <div class="wear-icon wear-icon-clothing" role="img" aria-label="Спецодежда"></div>
+          <div class="wear-items">
+          <p class="wear-item">Костюм для защиты от общих производственных загрязнений и механических воздействий</p>
+          <p class="wear-item">Белье нательное</p>
+          <p class="wear-item">Жилет сигнальный 2 класса защиты</p>
+          <p class="wear-item">Зимой дополнительно:</p>
+          <p class="wear-item">Костюм на утепляющей прокладке</p>
+          <p class="wear-item">Белье нательное утепленное</p>
+          </div>
         </div>
       </div>
 
-      <div class="sec">
+      <div class="sec sec-footwear">
         <h6>Спецобувь</h6>
         <div class="wear-row footwear">
-          <div class="ph">пиктограмма<br>обуви</div>
-          <p>Ботинки кожаные с защитным подноском или 
-Сапоги кожаные с защитным подноском, или 
-Сапоги резиновые с защитным подноском
-Зимой дополнительно:
-Ботинки кожаные утепленные с защитным подноском или 
-Валенки с резиновым низом</p>
+          <div class="wear-icon wear-icon-footwear" role="img" aria-label="Спецобувь"></div>
+          <div class="wear-items">
+          <p class="wear-item">Ботинки кожаные с защитным подноском или</p>
+          <p class="wear-item">Сапоги кожаные с защитным подноском, или</p>
+          <p class="wear-item">Сапоги резиновые с защитным подноском</p>
+          <p class="wear-item">Зимой дополнительно:</p>
+          <p class="wear-item">Ботинки кожаные утепленные с защитным подноском или</p>
+          <p class="wear-item">Валенки с резиновым низом</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="sec sec-siz">
+        <h6>СИЗ</h6>
+        <div class="wear-row siz">
+          <div class="wear-icon wear-icon-siz" role="img" aria-label="СИЗ"></div>
+          <div class="wear-items">
+          <p class="wear-item">Перчатки с полимерным покрытием</p>
+          <p class="wear-item">Перчатки диэлектрические</p>
+          <p class="wear-item">Каска защитная</p>
+          <p class="wear-item">Подшлемник под каску</p>
+          <p class="wear-item">Очки защитные</p>
+          <p class="wear-item">Наушники противошумные (с креплением на каску) или Вкладыши противошумные до износа</p>
+          <p class="wear-item">Средство индивидуальной защиты органов дыхания (СИЗОД) противоаэрозольное</p>
+          <p class="wear-item">Самоспасатель</p>
+          <p class="wear-item">Подшлемник утепленный (с однослойным или трехслойным утеплителем)</p>
+          <p class="wear-item">Перчатки с защитным покрытием морозостойкие с утепляющими вкладышами</p>
+          </div>
         </div>
       </div>
 
       <div class="sec span-2">
         <h6>Где учиться</h6>
-        <p>23.01.06 МАШИНИСТ ДОРОЖНЫХ И СТРОИТЕЛЬНЫХ МАШИН</p>
+        <p class="edu-hint">Это официальное название и номер специальности в колледже или вузе — он понадобится при поступлении.</p>
+        <div class="edu-list">
+        <div class="edu-row">
+            <span class="edu-code">№ 23.01.06</span>
+            <span class="edu-name">МАШИНИСТ ДОРОЖНЫХ И СТРОИТЕЛЬНЫХ МАШИН</span>
+          </div>
+        
+        
+        </div>
       </div>
 
       <div class="sec span-2">
@@ -147,9 +177,10 @@
       </div>
     </div>
 
-    <p class="data-note">Данные — карточка 21 из 160, отрасль «Транспорт и логистика». Зарплата — оценочная вилка по региону.</p>
+    <p class="data-note">Данные по профессии «Машинист экскаватора», отрасль «Транспорт и логистика». Зарплата — оценочная вилка по региону.</p>
   </div>
 
+  </div>
 </main>
 
 <div class="action-bar">

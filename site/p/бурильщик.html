@@ -5,6 +5,9 @@
 <title>Бурильщик — Электронный каталог профессий</title>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="description" content="Бурильщик: чем занимается, сколько зарабатывает в регионе, где учиться и где работать.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700&family=Roboto:wght@400;700&family=Roboto+Mono:wght@400;700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="../styles.css">
 <link rel="stylesheet" href="../page.css">
 </head>
@@ -13,28 +16,35 @@
 <div class="top-brand-bar">
   <img src="../assets/img/logo-dvizhenie-pervyh.svg" alt="Движение Первых · Гранты Первых" class="top-brand-logo">
   <img src="../assets/img/logo-proftracker.svg" alt="АНО «ПРОФТРЕКЕР»" class="top-brand-logo">
+  <div class="top-brand-actions">
+    <a class="home-btn" href="../index.html" aria-label="На главную" title="На главную">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M3 11.5 12 4l9 7.5"/><path d="M5.5 9.5V20h13V9.5"/></svg>
+    </a>
+    <a class="vk-btn" href="https://vk.ru/proftreker" target="_blank" rel="noopener" aria-label="Сообщество ВКонтакте" title="Мы ВКонтакте">VK</a>
+  </div>
 </div>
 
 <header class="topbar">
   <button class="icon-btn" type="button" onclick="history.length>1?history.back():location.href='../catalog.html'" aria-label="Назад">
     <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M19 12H5"/><path d="M12 19l-7-7 7-7"/></svg>
   </button>
-  <div class="crumb">КАРТА 12 · ГОРНО-ДОБЫВАЮЩАЯ</div>
   <button class="icon-btn" type="button" id="bookmark-btn" aria-label="Отметить, чтобы вернуться" aria-pressed="false">
     <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
   </button>
 </header>
 
 <main class="profession">
+  <div class="folder-tab">Бурильщик</div>
+  <div class="profession-sheet">
 
   <div class="profession-media">
-    <figure class="blueprint profession-photo has-photo">
-      <i class="corner tl"></i><i class="corner tr"></i><i class="corner bl"></i><i class="corner br"></i>
-      <img src="../assets/img/photos/бурильщик.png" alt="Карточка профессии «Бурильщик»" loading="lazy">
+    <figure class="profession-photo has-photo">
+      <div class="photo-frame">
+        <img src="../assets/img/photos/бурильщик.png" alt="Карточка профессии «Бурильщик»" loading="lazy">
+      </div>
     </figure>
 
-    <div class="blueprint stat-grid">
-      <i class="corner tl"></i><i class="corner tr"></i><i class="corner bl"></i><i class="corner br"></i>
+    <div class="stat-grid">
       <div class="stat">
         <div class="stat-label">Зарплата в регионе</div>
         <div class="stat-value" style="font-size:18px">80–140 тыс ₽</div>
@@ -46,39 +56,39 @@
     </div>
 
     <div class="partner-figure profession-partner">
-      <img src="../assets/img/logo-evraz.svg" alt="ЕВРАЗ" class="partner-logo">
+      <span class="partner-logo-zone">
+        <img src="../assets/img/logo-evraz.svg" alt="ЕВРАЗ" class="partner-logo">
+      </span>
       <span class="partner-label">Партнёр проекта</span>
     </div>
+    <div class="partner-caption">
+      <img src="../assets/img/evraz-caption.svg" alt="" class="partner-caption-img">
+    </div>
 
-    <button class="btn btn-primary btn-block blueprint desktop-cta" type="button" id="bookmark-btn-desktop">
-      <i class="corner tl"></i><i class="corner tr"></i><i class="corner bl"></i><i class="corner br"></i>
+    <button class="btn btn-primary btn-block desktop-cta" type="button" id="bookmark-btn-desktop">
       Отметить, чтобы вернуться
     </button>
   </div>
 
   <div class="profession-main">
+    <p class="crumb" style="margin-bottom:6px">ГОРНО-ДОБЫВАЮЩАЯ</p>
     <h1 class="p-title">Бурильщик</h1>
     <p class="p-short">Бурит скважины — от воды до нефти.</p>
 
     <div class="sections">
-      <div class="sec">
+      <div class="sec span-2">
         <h6>Основной вид деятельности</h6>
         <p>Бурит скважины на разных глубинах для добычи нефти, газа, воды или изучения геологического строения недр.</p>
       </div>
 
-      <div class="sec">
+      <div class="sec span-2">
         <h6>Что делает на рабочем месте</h6>
         <p>Бурильщик управляет буровой установкой — роторной, ударно-канатной или гидравлической, — которая проходит скважину на глубину в сотни и тысячи метров ради нефти, газа или воды. Он выбирает режим бурения под конкретную породу, следит за подачей бурового инструмента — коронок, долот, штанг — и вовремя наращивает или меняет колонну труб. На буровой одновременно работают насосы, грузоподъёмное оборудование и обсадные трубы, которые укрепляют стенки скважины, а бурильщик как старший на вахте координирует всю бригаду. Когда скважина достигает нужной глубины, вводит её в эксплуатацию и передаёт документацию следующей смене. Работа идёт на открытой площадке в любую погоду, поэтому костюм подбирают под условия — огнестойкий у устья скважины, где возможен контакт с нефтью, и утеплённый с меховым жилетом зимой. Каска, защитные очки и рукавицы — обязательная часть экипировки, потому что рядом постоянно движутся тяжёлые металлические конструкции.</p>
       </div>
 
       <div class="sec span-2">
         <h6>Что производит</h6>
-        <p>скважина
-
-контроль и выбор режима бурения скважины;
-регулировка подачи необходимого инструмента;
-введение скважины в эксплуатацию;
-руководство командой на вахте.</p>
+        <p>Пробуренная скважина — для воды, нефти или газа — готовая к эксплуатации.</p>
       </div>
 
       <div class="sec span-2">
@@ -90,47 +100,71 @@
         </div>
       </div>
 
-      <div class="sec">
-        <h6>Спецодежда и СИЗ</h6>
+      <div class="sec sec-clothing">
+        <h6>Спецодежда</h6>
         <div class="wear-row clothing">
-          <div class="ph">пиктограмма<br>одежды</div>
-          <p>Костюм для защиты от воды из синтетической ткани с пленочным покрытием
-Костюм из хлопчатобумажной ткани с огнезащитной пропиткойИЛИ Костюм из смешанных тканей с огнестойкой пропиткой,ИЛИ Костюм для защиты от нефти и нефтепродуктов из смешанных тканей или из огнестойких тканей на основе смеси мета- и параамидных волокон
-Костюм противоэнцефалитный 
-Комбинезон для защиты от токсичных веществ и пыли из нетканых материалов
-Футболка
-Нарукавники из полимерных материалов
-Перчатки с полимерным покрытием 
-Каска защитная 
-Подшлемник под каску 
-Очки защитные
- 
-На наружных работах зимой дополнительно:
-Костюм из хлопчатобумажной ткани с огнезащитной пропиткой на утепляющей прокладке или из огнестойких тканей на основе смеси мета- и параамидных термостойких волокон на утепляющей прокладке
-ИЛИ Костюм из смешанных тканей с огнезащитной пропиткой на утепляющей прокладке, ИЛИ Костюм для защиты от нефти и нефтепродуктов из смешанных тканей на утепляющей прокладке или из огнестойких тканей на основе смеси мета- и параамидных волокон на утепляющей прокладке
-Жилет утепленный 
-Жилет меховой 
-Белье нательное утепленное</p>
+          <div class="wear-icon wear-icon-clothing" role="img" aria-label="Спецодежда"></div>
+          <div class="wear-items">
+          <p class="wear-item">Костюм для защиты от воды из синтетической ткани с пленочным покрытием</p>
+          <p class="wear-item">Костюм из хлопчатобумажной ткани с огнезащитной пропиткойИЛИ Костюм из смешанных тканей с огнестойкой пропиткой</p>
+          <p class="wear-item">ИЛИ Костюм для защиты от нефти и нефтепродуктов из смешанных тканей или из огнестойких тканей на основе смеси мета- и параамидных волокон</p>
+          <p class="wear-item">Костюм противоэнцефалитный</p>
+          <p class="wear-item">Комбинезон для защиты от токсичных веществ и пыли из нетканых материалов</p>
+          <p class="wear-item">Футболка</p>
+          <p class="wear-item">Нарукавники из полимерных материалов</p>
+          <p class="wear-item">На наружных работах зимой дополнительно:</p>
+          <p class="wear-item">Костюм из хлопчатобумажной ткани с огнезащитной пропиткой на утепляющей прокладке или из огнестойких тканей на основе смеси мета- и параамидных термостойких волокон на утепляющей прокладке</p>
+          <p class="wear-item">ИЛИ Костюм из смешанных тканей с огнезащитной пропиткой на утепляющей прокладке</p>
+          <p class="wear-item">ИЛИ Костюм для защиты от нефти и нефтепродуктов из смешанных тканей на утепляющей прокладке или из огнестойких тканей на основе смеси мета- и параамидных волокон на утепляющей прокладке</p>
+          <p class="wear-item">Жилет утепленный</p>
+          <p class="wear-item">Жилет меховой</p>
+          <p class="wear-item">Белье нательное утепленное</p>
+          </div>
         </div>
       </div>
 
-      <div class="sec">
+      <div class="sec sec-footwear">
         <h6>Спецобувь</h6>
         <div class="wear-row footwear">
-          <div class="ph">пиктограмма<br>обуви</div>
-          <p>Ботинки кожаные с жестким подноском ИЛИ Сапоги кожаные с жестким подноском 
-Сапоги резиновые с жестким подноском ИЛИ Сапоги болотные с жестким подноском
+          <div class="wear-icon wear-icon-footwear" role="img" aria-label="Спецобувь"></div>
+          <div class="wear-items">
+          <p class="wear-item">Ботинки кожаные с жестким подноском ИЛИ Сапоги кожаные с жестким подноском</p>
+          <p class="wear-item">Сапоги резиновые с жестким подноском ИЛИ Сапоги болотные с жестким подноском</p>
+          <p class="wear-item">На наружных работах зимой дополнительно:</p>
+          <p class="wear-item">Ботинки кожаные утепленные с жестким подноском ИЛИ Сапоги кожаные утепленные с жестким подноском</p>
+          <p class="wear-item">Валенки с резиновым низом</p>
+          </div>
+        </div>
+      </div>
 
-На наружных работах зимой дополнительно:
-Ботинки кожаные утепленные с жестким подноском ИЛИ Сапоги кожаные утепленные с жестким подноском 
-Валенки с резиновым низом</p>
+      <div class="sec sec-siz">
+        <h6>СИЗ</h6>
+        <div class="wear-row siz">
+          <div class="wear-icon wear-icon-siz" role="img" aria-label="СИЗ"></div>
+          <div class="wear-items">
+          <p class="wear-item">Перчатки с полимерным покрытием</p>
+          <p class="wear-item">Каска защитная</p>
+          <p class="wear-item">Подшлемник под каску</p>
+          <p class="wear-item">Очки защитные</p>
+          </div>
         </div>
       </div>
 
       <div class="sec span-2">
         <h6>Где учиться</h6>
-        <p>21.01.03 Бурильщик эксплуатационных и разведочных скважин
-21.02.02 Бурение нефтяных и газовых скважин</p>
+        <p class="edu-hint">Это официальное название и номер специальности в колледже или вузе — он понадобится при поступлении.</p>
+        <div class="edu-list">
+        <div class="edu-row">
+            <span class="edu-code">№ 21.01.03</span>
+            <span class="edu-name">Бурильщик эксплуатационных и разведочных скважин</span>
+          </div>
+        <p class="edu-hint edu-more-hint">Ещё варианты, куда можно поступить на эту профессию — подойдёт любой один, учиться сразу на все не нужно:</p>
+        
+          <div class="edu-row">
+            <span class="edu-code">№ 21.02.02</span>
+            <span class="edu-name">Бурение нефтяных и газовых скважин</span>
+          </div>
+        </div>
       </div>
 
       <div class="sec span-2">
@@ -150,9 +184,10 @@
       </div>
     </div>
 
-    <p class="data-note">Данные — карточка 12 из 160, отрасль «Горно-добывающая». Зарплата — оценочная вилка по региону.</p>
+    <p class="data-note">Данные по профессии «Бурильщик», отрасль «Горно-добывающая». Зарплата — оценочная вилка по региону.</p>
   </div>
 
+  </div>
 </main>
 
 <div class="action-bar">

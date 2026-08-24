@@ -1,5 +1,10 @@
 /* Profession card page — layout only. All color/type/space/radius values
-   come from styles.css tokens; brand re-skin happens there, not here. */
+   come from styles.css tokens; brand re-skin happens there, not here.
+
+   «Личное дело»: страница — стол (фон-канвас), карточка профессии — лист
+   бумаги на столе (.profession-sheet, светлее канвы), с вкладкой папки
+   (.folder-tab) над ним. Фото профессии выглядит утопленным прямо в лист —
+   глубокая внутренняя тень продавливает бумагу, а не отдельная вставка. */
 
 body { margin: 0; }
 
@@ -7,7 +12,7 @@ body { margin: 0; }
 .ph {
   background: repeating-linear-gradient(45deg, color-mix(in srgb, var(--color-text) 7%, transparent) 0 6px, transparent 6px 12px);
   display: flex; align-items: center; justify-content: center;
-  font: 400 10px ui-monospace, Menlo, monospace; color: color-mix(in srgb, var(--color-text) 50%, transparent);
+  font: 400 10px var(--font-mono); color: color-mix(in srgb, var(--color-text) 50%, transparent);
   text-align: center; letter-spacing: .04em; padding: var(--space-2);
 }
 
@@ -18,26 +23,24 @@ body { margin: 0; }
 .sec ul { margin: 0 0 var(--space-2); padding-left: 16px; font-size: 13px; }
 .sec li { margin-bottom: 3px; break-inside: avoid; }
 
-/* — header — */
+/* — header: только назад/закладка, крошка ушла на вкладку папки — */
 .topbar {
   position: sticky; top: 70px; z-index: 10;
   display: flex; align-items: center; justify-content: space-between;
   gap: var(--space-3);
-  padding: var(--space-3) var(--space-4);
-  border-bottom: 1px solid var(--color-divider);
-  background: var(--color-bg);
+  padding: var(--space-2) var(--space-4);
 }
 .icon-btn {
   display: inline-flex; align-items: center; justify-content: center;
   width: 32px; height: 32px; flex: none;
   color: var(--color-text); background: none; border: none; padding: 0; cursor: pointer;
-  text-decoration: none;
+  text-decoration: none; opacity: .6;
 }
-.icon-btn:hover { color: var(--color-accent); }
-.icon-btn[aria-pressed="true"] { color: var(--color-accent); }
+.icon-btn:hover { opacity: 1; color: var(--color-accent); }
+.icon-btn[aria-pressed="true"] { opacity: 1; color: var(--color-accent); }
 .icon-btn svg { width: 20px; height: 20px; }
 .crumb {
-  font: 400 10px ui-monospace, Menlo, monospace; letter-spacing: .08em;
+  font: 400 10px var(--font-mono); letter-spacing: .08em;
   color: color-mix(in srgb, var(--color-text) 55%, transparent);
   white-space: nowrap; overflow: hidden; text-overflow: ellipsis;
 }
@@ -45,40 +48,91 @@ body { margin: 0; }
 /* — page body — */
 .profession { padding: var(--space-4); max-width: 1120px; margin: 0 auto; }
 
+/* — вкладка папки: имя профессии, левый край вровень с левым краем листа — */
+.folder-tab {
+  display: inline-flex; align-items: center;
+  padding: 9px 20px;
+  background: var(--color-bg); color: color-mix(in srgb, var(--color-text) 60%, transparent);
+  border-radius: 16px 16px 0 0;
+  font: 700 10px var(--font-mono); letter-spacing: .08em; text-transform: uppercase;
+}
+
+/* — лист: контент профессии, светлее фона страницы, приподнят над холстом — */
+.profession-sheet {
+  background: var(--color-bg);
+  border-radius: 0 22px 22px 22px;
+  padding: var(--space-4);
+  box-shadow: 0 3mm 3mm rgba(0, 0, 0, 0.18);
+}
+
 .p-title { margin: 0 0 var(--space-1); }
 .p-short { font-size: 13.5px; color: color-mix(in srgb, var(--color-text) 65%, transparent); margin: 0 0 var(--space-4); }
 
+/* — фото утоплено прямо в лист: виньетка прямо на самом изображении
+   (радиальный градиент поверх картинки), а не тень вокруг рамки — так
+   затемнение видно на любом фото, независимо от его освещения — */
 .profession-photo { margin-bottom: var(--space-4); }
-.profession-photo .ph { height: 180px; }
 .profession-photo.has-photo {
-  background: var(--color-surface); text-align: center; overflow: hidden;
-  border-radius: 22px;
+  background: var(--color-bg); padding: 10px; border-radius: 34px;
 }
-.profession-photo.has-photo img {
-  display: block; margin: 0 auto; width: 100%; height: auto; object-fit: contain;
+.profession-photo .photo-frame {
+  position: relative; overflow: hidden; border-radius: 24px;
+  background: var(--color-surface);
 }
+.profession-photo.has-photo .photo-frame img {
+  display: block; width: 100%; height: auto;
+}
+.profession-photo .photo-frame::after {
+  content: ''; position: absolute; inset: 0; pointer-events: none;
+  box-shadow: inset 0 0 4mm 0 rgba(0, 0, 0, 0.65);
+  background: radial-gradient(ellipse at center, transparent calc(100% - 2mm), rgba(0, 0, 0, 0.55) 100%);
+}
+.profession-photo .ph { height: 180px; }
 
 /* — партнёр проекта на карточке профессии: под блоком зарплаты/отрасли — */
-.profession-partner { border-top: none; margin-top: 0; }
+.profession-partner { margin-top: 0; }
 
 .stat-grid {
   display: grid; grid-template-columns: 1fr 1fr; gap: 1px;
   background: var(--color-divider); margin-bottom: var(--space-2);
+  border-radius: var(--radius-md); overflow: hidden;
 }
 .stat { background: var(--color-bg); padding: var(--space-3); }
 .stat-label {
-  font: 400 9.5px ui-monospace, monospace; letter-spacing: .08em;
+  font: 400 9.5px var(--font-mono); letter-spacing: .08em;
   color: color-mix(in srgb, var(--color-text) 55%, transparent); margin-bottom: 4px;
 }
 .stat-value { font: 600 20px var(--font-heading); }
 
 .equip-tags, .employer-tags { display: flex; flex-wrap: wrap; gap: 6px; }
 
+/* — «Где учиться»: номер специальности отдельно от названия — */
+.edu-hint { font-size: 12px; color: color-mix(in srgb, var(--color-text) 55%, transparent); margin: 0 0 var(--space-2); }
+.edu-more-hint { margin: var(--space-1) 0 0; padding-top: var(--space-1); border-top: 1px dashed var(--color-divider); }
+.edu-list { display: flex; flex-direction: column; gap: 8px; }
+.edu-row { display: flex; align-items: baseline; flex-wrap: wrap; gap: 8px; }
+.edu-code {
+  flex: none; font: 700 11px var(--font-mono); letter-spacing: .02em;
+  color: var(--color-accent-700); background: var(--color-accent-100);
+  padding: 2px 8px; border-radius: 100px;
+}
+.edu-name { font-size: 13px; }
+
 .wear-row { display: flex; gap: 10px; align-items: flex-start; }
-.wear-row .ph { flex: none; }
-.wear-row.clothing .ph { width: 78px; height: 96px; }
-.wear-row.footwear .ph { width: 78px; height: 60px; }
+.wear-icon {
+  flex: none; width: 56px; height: 56px;
+  background-color: var(--color-accent-700);
+  -webkit-mask-repeat: no-repeat; mask-repeat: no-repeat;
+  -webkit-mask-position: center; mask-position: center;
+  -webkit-mask-size: contain; mask-size: contain;
+}
+.wear-icon-clothing { -webkit-mask-image: url('../assets/img/icons/spetsodezhda.png'); mask-image: url('../assets/img/icons/spetsodezhda.png'); }
+.wear-icon-footwear { -webkit-mask-image: url('../assets/img/icons/spetsobuv.png'); mask-image: url('../assets/img/icons/spetsobuv.png'); }
+.wear-icon-siz { -webkit-mask-image: url('../assets/img/icons/siz.png'); mask-image: url('../assets/img/icons/siz.png'); }
 .wear-row p { margin: 0; }
+.wear-items { display: flex; flex-direction: column; gap: 6px; }
+.wear-item { margin: 0; font-size: 13px; }
+.wear-item-muted { color: color-mix(in srgb, var(--color-text) 55%, transparent); font-style: italic; }
 
 .fgos-list { display: flex; flex-direction: column; gap: var(--space-2); margin: 0; padding: 0; list-style: none; }
 .fgos-list li { border: 1px solid var(--color-divider); padding: 10px; font-size: 12.5px; }
@@ -88,6 +142,7 @@ body { margin: 0; }
 .similar-card {
   border: 1px solid var(--color-divider); padding: 10px; min-width: 120px; flex: none;
   font: 600 14px var(--font-heading);
+  border-radius: calc(var(--radius-md) * 0.75);
 }
 
 .action-bar {
@@ -95,7 +150,7 @@ body { margin: 0; }
   display: flex; gap: var(--space-2);
   padding: var(--space-3) var(--space-4);
   border-top: 1px solid var(--color-divider);
-  background: var(--color-bg);
+  background: var(--color-canvas);
 }
 .action-bar .btn-primary { flex: 1; min-height: 46px; }
 .action-bar .btn-icon { width: 46px; height: 46px; }
@@ -109,8 +164,11 @@ body { margin: 0; }
 @media (min-width: 900px) {
   .profession {
     padding: var(--space-6) var(--space-8) var(--space-8);
+  }
+  .profession-sheet {
     display: grid; grid-template-columns: 400px 1fr; gap: var(--space-8);
     align-items: start;
+    padding: var(--space-6) var(--space-8);
   }
   .profession-media {
     position: sticky; top: 64px;
@@ -125,11 +183,16 @@ body { margin: 0; }
   .sections .sec.span-2 { grid-column: 1 / -1; }
   .sections .sec.list-2col ul { columns: 2; column-gap: var(--space-8); }
 
+  /* — спецодежда растянута на высоту спецобуви + СИЗ, но остаётся в одну колонку;
+     спецобувь и СИЗ встают друг под другом во второй колонке — */
+  .sections .sec-clothing { grid-row: span 2; display: flex; flex-direction: column; }
+  .sections .sec-clothing .wear-row { flex: 1; }
+
   .action-bar { display: none; }
   .desktop-cta { display: flex; }
 }
 .desktop-cta { display: none; }
 
 @media (max-width: 899.98px) {
-  .profession { display: block; }
+  .profession-sheet { display: block; }
 }

@@ -19,7 +19,7 @@ body { margin: 0; }
 .icon-btn:hover { color: var(--color-accent); }
 .icon-btn svg { width: 20px; height: 20px; }
 .crumb {
-  font: 400 10px ui-monospace, Menlo, monospace; letter-spacing: .08em;
+  font: 400 10px var(--font-mono); letter-spacing: .08em;
   color: color-mix(in srgb, var(--color-text) 55%, transparent);
   white-space: nowrap; overflow: hidden; text-overflow: ellipsis;
 }
@@ -49,7 +49,7 @@ body { margin: 0; }
 .hero-figure-girl { height: 80%; margin-right: -22px; }
 .hero-figure-boy { height: 94%; z-index: 1; }
 
-.start .kicker { margin-top: var(--space-2); }
+.start .kicker { margin-top: var(--space-2); font-size: 15px; letter-spacing: .04em; font-weight: 700; }
 .start h2 { font-size: 30px; line-height: 1.12; }
 .start .lead { font-size: 13px; opacity: 0.65; margin-bottom: var(--space-4); }
 

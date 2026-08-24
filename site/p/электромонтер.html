@@ -5,6 +5,9 @@
 <title>Электромонтер — Электронный каталог профессий</title>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="description" content="Электромонтер: чем занимается, сколько зарабатывает в регионе, где учиться и где работать.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700&family=Roboto:wght@400;700&family=Roboto+Mono:wght@400;700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="../styles.css">
 <link rel="stylesheet" href="../page.css">
 </head>
@@ -13,28 +16,35 @@
 <div class="top-brand-bar">
   <img src="../assets/img/logo-dvizhenie-pervyh.svg" alt="Движение Первых · Гранты Первых" class="top-brand-logo">
   <img src="../assets/img/logo-proftracker.svg" alt="АНО «ПРОФТРЕКЕР»" class="top-brand-logo">
+  <div class="top-brand-actions">
+    <a class="home-btn" href="../index.html" aria-label="На главную" title="На главную">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M3 11.5 12 4l9 7.5"/><path d="M5.5 9.5V20h13V9.5"/></svg>
+    </a>
+    <a class="vk-btn" href="https://vk.ru/proftreker" target="_blank" rel="noopener" aria-label="Сообщество ВКонтакте" title="Мы ВКонтакте">VK</a>
+  </div>
 </div>
 
 <header class="topbar">
   <button class="icon-btn" type="button" onclick="history.length>1?history.back():location.href='../catalog.html'" aria-label="Назад">
     <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M19 12H5"/><path d="M12 19l-7-7 7-7"/></svg>
   </button>
-  <div class="crumb">КАРТА 78 · СКВОЗНЫЕ ПРОФЕССИИ</div>
   <button class="icon-btn" type="button" id="bookmark-btn" aria-label="Отметить, чтобы вернуться" aria-pressed="false">
     <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
   </button>
 </header>
 
 <main class="profession">
+  <div class="folder-tab">Электромонтер</div>
+  <div class="profession-sheet">
 
   <div class="profession-media">
-    <figure class="blueprint profession-photo has-photo">
-      <i class="corner tl"></i><i class="corner tr"></i><i class="corner bl"></i><i class="corner br"></i>
-      <img src="../assets/img/photos/электромонтер.png" alt="Карточка профессии «Электромонтер»" loading="lazy">
+    <figure class="profession-photo has-photo">
+      <div class="photo-frame">
+        <img src="../assets/img/photos/электромонтер.png" alt="Карточка профессии «Электромонтер»" loading="lazy">
+      </div>
     </figure>
 
-    <div class="blueprint stat-grid">
-      <i class="corner tl"></i><i class="corner tr"></i><i class="corner bl"></i><i class="corner br"></i>
+    <div class="stat-grid">
       <div class="stat">
         <div class="stat-label">Зарплата в регионе</div>
         <div class="stat-value" style="font-size:18px">55–95 тыс ₽</div>
@@ -46,27 +56,32 @@
     </div>
 
     <div class="partner-figure profession-partner">
-      <img src="../assets/img/logo-evraz.svg" alt="ЕВРАЗ" class="partner-logo">
+      <span class="partner-logo-zone">
+        <img src="../assets/img/logo-evraz.svg" alt="ЕВРАЗ" class="partner-logo">
+      </span>
       <span class="partner-label">Партнёр проекта</span>
     </div>
+    <div class="partner-caption">
+      <img src="../assets/img/evraz-caption.svg" alt="" class="partner-caption-img">
+    </div>
 
-    <button class="btn btn-primary btn-block blueprint desktop-cta" type="button" id="bookmark-btn-desktop">
-      <i class="corner tl"></i><i class="corner tr"></i><i class="corner bl"></i><i class="corner br"></i>
+    <button class="btn btn-primary btn-block desktop-cta" type="button" id="bookmark-btn-desktop">
       Отметить, чтобы вернуться
     </button>
   </div>
 
   <div class="profession-main">
+    <p class="crumb" style="margin-bottom:6px">СКВОЗНЫЕ ПРОФЕССИИ</p>
     <h1 class="p-title">Электромонтер</h1>
     <p class="p-short">Обслуживает электрику, чтобы всё работало.</p>
 
     <div class="sections">
-      <div class="sec">
+      <div class="sec span-2">
         <h6>Основной вид деятельности</h6>
         <p>Устанавливает электрооборудование: монтирует проводку, розетки, выключатели, электрические панели и другие компоненты системы.</p>
       </div>
 
-      <div class="sec">
+      <div class="sec span-2">
         <h6>Что делает на рабочем месте</h6>
         <p>Электромонтёр обслуживает и ремонтирует электрические системы — регулярно проверяет состояние проводки и оборудования, находит и устраняет неисправности и повреждения, прежде чем они приведут к перебою или короткому замыканию. Работает как внутри зданий, так и на открытом воздухе — на стройплощадках, в промышленных цехах, офисных и жилых комплексах, на электростанциях и трансформаторных подстанциях. Перед началом работ читает электрические схемы и чертежи, чтобы точно понимать, где и как безопасно проложить или подключить провод. Тестирует и диагностирует электрические системы измерительными приборами — мультиметром, тестером устройств защитного отключения, измерителем изоляции, — проверяя напряжение и сопротивление. При монтаже новых участков сети использует дрели, перфораторы и специализированные инструменты для работы с проводкой — плоскогубцы, бокорезы, стрипперы. Работает под напряжением или рядом с ним, поэтому диэлектрический костюм, перчатки, каска и щиток для лица — обязательная часть экипировки на каждой смене.</p>
       </div>
@@ -85,25 +100,69 @@
         </div>
       </div>
 
-      <div class="sec">
-        <h6>Спецодежда и СИЗ</h6>
+      <div class="sec sec-clothing">
+        <h6>Спецодежда</h6>
         <div class="wear-row clothing">
-          <div class="ph">пиктограмма<br>одежды</div>
-          <p>Костюм из диэлектрической ткани. Спецодежда из брезента, стойкого к повышенным температурам. Диэлектрические перчатки, рукавицы или крагами, закрывающий лицо щиток, каска. Удерживающие системы и пояса, стропы.</p>
+          <div class="wear-icon wear-icon-clothing" role="img" aria-label="Спецодежда"></div>
+          <div class="wear-items">
+          <p class="wear-item">Костюм из диэлектрической ткани</p>
+          <p class="wear-item">Спецодежда из брезента, стойкого к повышенным температурам</p>
+          </div>
         </div>
       </div>
 
-      <div class="sec">
+      <div class="sec sec-footwear">
         <h6>Спецобувь</h6>
         <div class="wear-row footwear">
-          <div class="ph">пиктограмма<br>обуви</div>
-          <p>Ботинки или полуботинки, галоши или боты из формованной или клееной резины на подошве, которая не проводит электричество и не деформируется под воздействием высоких температур, изготовлена из негорючих и диэлектрических материалов. Модель может быть оснащена неметаллической стелькой, сделанной из волокон кевлара</p>
+          <div class="wear-icon wear-icon-footwear" role="img" aria-label="Спецобувь"></div>
+          <div class="wear-items">
+          <p class="wear-item">Ботинки или полуботинки, галоши или боты из формованной или клееной резины на подошве, которая не проводит электричество и не деформируется под воздействием высоких температур, изготовлена из негорючих и диэлектрических материалов</p>
+          <p class="wear-item">Модель может быть оснащена неметаллической стелькой, сделанной из волокон кевлара</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="sec sec-siz">
+        <h6>СИЗ</h6>
+        <div class="wear-row siz">
+          <div class="wear-icon wear-icon-siz" role="img" aria-label="СИЗ"></div>
+          <div class="wear-items">
+          <p class="wear-item">Диэлектрические перчатки, рукавицы или крагами, закрывающий лицо щиток, каска</p>
+          <p class="wear-item">Удерживающие системы и пояса, стропы</p>
+          </div>
         </div>
       </div>
 
       <div class="sec span-2">
         <h6>Где учиться</h6>
-        <p>13.01.07 Электромонтер по ремонту электросетей 23.01.14 Электромонтер устройств сигнализации, централизации, блокировки (СЦБ)                               13.01.10 Электромонтер по ремонту и обслуживанию электрооборудования 13.01.05 Электромонтер по техническому обслуживанию электростанций и сетей 23.01.13 Электромонтер тяговой подстанции</p>
+        <p class="edu-hint">Это официальное название и номер специальности в колледже или вузе — он понадобится при поступлении.</p>
+        <div class="edu-list">
+        <div class="edu-row">
+            <span class="edu-code">№ 13.01.07</span>
+            <span class="edu-name">Электромонтер по ремонту электросетей</span>
+          </div>
+        <p class="edu-hint edu-more-hint">Ещё варианты, куда можно поступить на эту профессию — подойдёт любой один, учиться сразу на все не нужно:</p>
+        
+          <div class="edu-row">
+            <span class="edu-code">№ 23.01.14</span>
+            <span class="edu-name">Электромонтер устройств сигнализации, централизации, блокировки (СЦБ)</span>
+          </div>
+        
+          <div class="edu-row">
+            <span class="edu-code">№ 13.01.10</span>
+            <span class="edu-name">Электромонтер по ремонту и обслуживанию электрооборудования</span>
+          </div>
+        
+          <div class="edu-row">
+            <span class="edu-code">№ 13.01.05</span>
+            <span class="edu-name">Электромонтер по техническому обслуживанию электростанций и сетей</span>
+          </div>
+        
+          <div class="edu-row">
+            <span class="edu-code">№ 23.01.13</span>
+            <span class="edu-name">Электромонтер тяговой подстанции</span>
+          </div>
+        </div>
       </div>
 
       <div class="sec span-2">
@@ -123,9 +182,10 @@
       </div>
     </div>
 
-    <p class="data-note">Данные — карточка 78 из 160, отрасль «Сквозные профессии». Зарплата — оценочная вилка по региону.</p>
+    <p class="data-note">Данные по профессии «Электромонтер», отрасль «Сквозные профессии». Зарплата — оценочная вилка по региону.</p>
   </div>
 
+  </div>
 </main>
 
 <div class="action-bar">

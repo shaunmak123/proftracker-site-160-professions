@@ -5,6 +5,9 @@
 <title>Визажист — Электронный каталог профессий</title>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="description" content="Визажист: чем занимается, сколько зарабатывает в регионе, где учиться и где работать.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700&family=Roboto:wght@400;700&family=Roboto+Mono:wght@400;700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="../styles.css">
 <link rel="stylesheet" href="../page.css">
 </head>
@@ -13,28 +16,35 @@
 <div class="top-brand-bar">
   <img src="../assets/img/logo-dvizhenie-pervyh.svg" alt="Движение Первых · Гранты Первых" class="top-brand-logo">
   <img src="../assets/img/logo-proftracker.svg" alt="АНО «ПРОФТРЕКЕР»" class="top-brand-logo">
+  <div class="top-brand-actions">
+    <a class="home-btn" href="../index.html" aria-label="На главную" title="На главную">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M3 11.5 12 4l9 7.5"/><path d="M5.5 9.5V20h13V9.5"/></svg>
+    </a>
+    <a class="vk-btn" href="https://vk.ru/proftreker" target="_blank" rel="noopener" aria-label="Сообщество ВКонтакте" title="Мы ВКонтакте">VK</a>
+  </div>
 </div>
 
 <header class="topbar">
   <button class="icon-btn" type="button" onclick="history.length>1?history.back():location.href='../catalog.html'" aria-label="Назад">
     <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M19 12H5"/><path d="M12 19l-7-7 7-7"/></svg>
   </button>
-  <div class="crumb">КАРТА 114 · ТУРИЗМ И СФЕРА УСЛУГ</div>
   <button class="icon-btn" type="button" id="bookmark-btn" aria-label="Отметить, чтобы вернуться" aria-pressed="false">
     <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
   </button>
 </header>
 
 <main class="profession">
+  <div class="folder-tab">Визажист</div>
+  <div class="profession-sheet">
 
   <div class="profession-media">
-    <figure class="blueprint profession-photo has-photo">
-      <i class="corner tl"></i><i class="corner tr"></i><i class="corner bl"></i><i class="corner br"></i>
-      <img src="../assets/img/photos/визажист.png" alt="Карточка профессии «Визажист»" loading="lazy">
+    <figure class="profession-photo has-photo">
+      <div class="photo-frame">
+        <img src="../assets/img/photos/визажист.png" alt="Карточка профессии «Визажист»" loading="lazy">
+      </div>
     </figure>
 
-    <div class="blueprint stat-grid">
-      <i class="corner tl"></i><i class="corner tr"></i><i class="corner bl"></i><i class="corner br"></i>
+    <div class="stat-grid">
       <div class="stat">
         <div class="stat-label">Зарплата в регионе</div>
         <div class="stat-value" style="font-size:18px">45–90 тыс ₽</div>
@@ -46,40 +56,39 @@
     </div>
 
     <div class="partner-figure profession-partner">
-      <img src="../assets/img/logo-evraz.svg" alt="ЕВРАЗ" class="partner-logo">
+      <span class="partner-logo-zone">
+        <img src="../assets/img/logo-evraz.svg" alt="ЕВРАЗ" class="partner-logo">
+      </span>
       <span class="partner-label">Партнёр проекта</span>
     </div>
+    <div class="partner-caption">
+      <img src="../assets/img/evraz-caption.svg" alt="" class="partner-caption-img">
+    </div>
 
-    <button class="btn btn-primary btn-block blueprint desktop-cta" type="button" id="bookmark-btn-desktop">
-      <i class="corner tl"></i><i class="corner tr"></i><i class="corner bl"></i><i class="corner br"></i>
+    <button class="btn btn-primary btn-block desktop-cta" type="button" id="bookmark-btn-desktop">
       Отметить, чтобы вернуться
     </button>
   </div>
 
   <div class="profession-main">
+    <p class="crumb" style="margin-bottom:6px">ТУРИЗМ И СФЕРА УСЛУГ</p>
     <h1 class="p-title">Визажист</h1>
     <p class="p-short">Делает макияж для съёмок и праздников.</p>
 
     <div class="sections">
-      <div class="sec">
+      <div class="sec span-2">
         <h6>Основной вид деятельности</h6>
         <p>Делает макияж клиентам — от повседневного до художественного для съёмок и мероприятий.</p>
       </div>
 
-      <div class="sec">
+      <div class="sec span-2">
         <h6>Что делает на рабочем месте</h6>
         <p>Визажист определяет тип и тон кожи клиента и подбирает под него косметику — тональный крем, консилер, пудру, — а перед нанесением макияжа подготавливает кожу увлажняющими средствами. Кистями и спонжами наносит основу, корректирует форму лица контурингом и хайлайтингом, подчёркивая скулы и другие черты света и тени. Прорабатывает глаза тенями, тушью и карандашом, а губы — помадой и карандашом для контура, подбирая палитру под образ клиента — свадебный, вечерний или сценический. Отдельно оформляет и окрашивает брови и ресницы, которые задают выражение всего лица. Для сложных художественных образов — сценического или фотографического визажа — использует более смелые техники и рисунки, которые не подходят для повседневного макияжа. Работает в монохромной одежде, которая не отвлекает внимание от лица клиента, и с широким набором кистей, спонжей и пинцетов, разложенных для быстрого доступа.</p>
       </div>
 
       <div class="sec span-2">
         <h6>Что производит</h6>
-        <p>Консультация клиентов.
-Определение типа кожи клиента, а также подбор для него косметики.
-Подготовка кожи к проведению последующих манипуляций.
-Корректировка овала лица.
-Коррекция бровей.
-Окраска бровей, ресниц.
-Нанесение декоративной косметики.</p>
+        <p>Готовый макияж — для фотосъёмки, мероприятия или на каждый день — подобранный под лицо, образ и повод.</p>
       </div>
 
       <div class="sec span-2">
@@ -93,25 +102,47 @@
         </div>
       </div>
 
-      <div class="sec">
-        <h6>Спецодежда и СИЗ</h6>
+      <div class="sec sec-clothing">
+        <h6>Спецодежда</h6>
         <div class="wear-row clothing">
-          <div class="ph">пиктограмма<br>одежды</div>
-          <p>Монохромная одежда (костюм, платья)</p>
+          <div class="wear-icon wear-icon-clothing" role="img" aria-label="Спецодежда"></div>
+          <div class="wear-items">
+          <p class="wear-item">Монохромная одежда (костюм, платья)</p>
+          </div>
         </div>
       </div>
 
-      <div class="sec">
+      <div class="sec sec-footwear">
         <h6>Спецобувь</h6>
         <div class="wear-row footwear">
-          <div class="ph">пиктограмма<br>обуви</div>
-          <p>удобная обувь,туфли, босоножки</p>
+          <div class="wear-icon wear-icon-footwear" role="img" aria-label="Спецобувь"></div>
+          <div class="wear-items">
+          <p class="wear-item">удобная обувь, туфли, босоножки</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="sec sec-siz">
+        <h6>СИЗ</h6>
+        <div class="wear-row siz">
+          
+          <div class="wear-items">
+          <p class="wear-item wear-item-muted">Для этой профессии специальные средства защиты не требуются.</p>
+          </div>
         </div>
       </div>
 
       <div class="sec span-2">
         <h6>Где учиться</h6>
-        <p>43.02.17 Визаж и стилистика</p>
+        <p class="edu-hint">Это официальное название и номер специальности в колледже или вузе — он понадобится при поступлении.</p>
+        <div class="edu-list">
+        <div class="edu-row">
+            <span class="edu-code">№ 43.02.17</span>
+            <span class="edu-name">Визаж и стилистика</span>
+          </div>
+        
+        
+        </div>
       </div>
 
       <div class="sec span-2">
@@ -131,9 +162,10 @@
       </div>
     </div>
 
-    <p class="data-note">Данные — карточка 114 из 160, отрасль «Туризм и сфера услуг». Зарплата — оценочная вилка по региону.</p>
+    <p class="data-note">Данные по профессии «Визажист», отрасль «Туризм и сфера услуг». Зарплата — оценочная вилка по региону.</p>
   </div>
 
+  </div>
 </main>
 
 <div class="action-bar">

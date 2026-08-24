@@ -5,6 +5,9 @@
 <title>Водитель грузового автомобиля — Электронный каталог профессий</title>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="description" content="Водитель грузового автомобиля: чем занимается, сколько зарабатывает в регионе, где учиться и где работать.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700&family=Roboto:wght@400;700&family=Roboto+Mono:wght@400;700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="../styles.css">
 <link rel="stylesheet" href="../page.css">
 </head>
@@ -13,28 +16,35 @@
 <div class="top-brand-bar">
   <img src="../assets/img/logo-dvizhenie-pervyh.svg" alt="Движение Первых · Гранты Первых" class="top-brand-logo">
   <img src="../assets/img/logo-proftracker.svg" alt="АНО «ПРОФТРЕКЕР»" class="top-brand-logo">
+  <div class="top-brand-actions">
+    <a class="home-btn" href="../index.html" aria-label="На главную" title="На главную">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M3 11.5 12 4l9 7.5"/><path d="M5.5 9.5V20h13V9.5"/></svg>
+    </a>
+    <a class="vk-btn" href="https://vk.ru/proftreker" target="_blank" rel="noopener" aria-label="Сообщество ВКонтакте" title="Мы ВКонтакте">VK</a>
+  </div>
 </div>
 
 <header class="topbar">
   <button class="icon-btn" type="button" onclick="history.length>1?history.back():location.href='../catalog.html'" aria-label="Назад">
     <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M19 12H5"/><path d="M12 19l-7-7 7-7"/></svg>
   </button>
-  <div class="crumb">КАРТА 23 · ТРАНСПОРТ И ЛОГИСТИКА</div>
   <button class="icon-btn" type="button" id="bookmark-btn" aria-label="Отметить, чтобы вернуться" aria-pressed="false">
     <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
   </button>
 </header>
 
 <main class="profession">
+  <div class="folder-tab">Водитель грузового автомобиля</div>
+  <div class="profession-sheet">
 
   <div class="profession-media">
-    <figure class="blueprint profession-photo has-photo">
-      <i class="corner tl"></i><i class="corner tr"></i><i class="corner bl"></i><i class="corner br"></i>
-      <img src="../assets/img/photos/водитель-грузового-автомобиля.png" alt="Карточка профессии «Водитель грузового автомобиля»" loading="lazy">
+    <figure class="profession-photo has-photo">
+      <div class="photo-frame">
+        <img src="../assets/img/photos/водитель-грузового-автомобиля.png" alt="Карточка профессии «Водитель грузового автомобиля»" loading="lazy">
+      </div>
     </figure>
 
-    <div class="blueprint stat-grid">
-      <i class="corner tl"></i><i class="corner tr"></i><i class="corner bl"></i><i class="corner br"></i>
+    <div class="stat-grid">
       <div class="stat">
         <div class="stat-label">Зарплата в регионе</div>
         <div class="stat-value" style="font-size:18px">70–120 тыс ₽</div>
@@ -46,39 +56,39 @@
     </div>
 
     <div class="partner-figure profession-partner">
-      <img src="../assets/img/logo-evraz.svg" alt="ЕВРАЗ" class="partner-logo">
+      <span class="partner-logo-zone">
+        <img src="../assets/img/logo-evraz.svg" alt="ЕВРАЗ" class="partner-logo">
+      </span>
       <span class="partner-label">Партнёр проекта</span>
     </div>
+    <div class="partner-caption">
+      <img src="../assets/img/evraz-caption.svg" alt="" class="partner-caption-img">
+    </div>
 
-    <button class="btn btn-primary btn-block blueprint desktop-cta" type="button" id="bookmark-btn-desktop">
-      <i class="corner tl"></i><i class="corner tr"></i><i class="corner bl"></i><i class="corner br"></i>
+    <button class="btn btn-primary btn-block desktop-cta" type="button" id="bookmark-btn-desktop">
       Отметить, чтобы вернуться
     </button>
   </div>
 
   <div class="profession-main">
+    <p class="crumb" style="margin-bottom:6px">ТРАНСПОРТ И ЛОГИСТИКА</p>
     <h1 class="p-title">Водитель грузового автомобиля</h1>
     <p class="p-short">Возит грузы фурой по всей стране.</p>
 
     <div class="sections">
-      <div class="sec">
+      <div class="sec span-2">
         <h6>Основной вид деятельности</h6>
         <p>Управляет грузовым автомобилем и доставляет грузы между городами и предприятиями.</p>
       </div>
 
-      <div class="sec">
+      <div class="sec span-2">
         <h6>Что делает на рабочем месте</h6>
         <p>Водитель грузового автомобиля проводит за рулём фуры долгие часы, доставляя груз из одной точки страны в другую точно в срок и в целости. Перед рейсом проверяет техническое состояние машины — уровень масла, давление в шинах, тормоза, — а в дороге возит с собой ремкомплект: домкрат, трос для буксировки, набор отвёрток и гаечных ключей, запасное колесо и канистры с топливом на случай поломки в пути. Оформляет товаросопроводительные документы, ведёт путевой лист и следит за пройденным километражем и расходом топлива. При погрузке и разгрузке иногда сам участвует в перемещении товара, а также общается с отправителями и получателями груза, уточняя детали доставки. Долгие переезды требуют выносливости и умения планировать остановки на отдых так, чтобы не нарушить сроки и правила труда и отдыха водителей. Из спецодежды — простая рабочая: каска и защитные очки для случаев, когда приходится работать с грузом на площадке, и удобная обувь для многочасового вождения.</p>
       </div>
 
       <div class="sec span-2">
         <h6>Что производит</h6>
-        <p>управление грузовым автомобилем: Безопасное вождение транспортного средства в соответствии с правилами дорожного движения.
-Погрузка и разгрузка груза: В некоторых случаях водителю может потребоваться заниматься погрузкой или разгрузкой товаров.
-Поддержание автомобиля в рабочем состоянии: Регулярная проверка и обслуживание транспортного средства, включая заправку топливом, проверку уровня масла, воздуха в шинах и другие технические жидкости.
-Документирование: Оформление товаросопроводительных документов, ведение журнала поездок, отчетов о пройденных километрах и расходованных топливе.
-Контроль за сроками доставки: Обеспечение своевременной доставки груза в назначенное место.
-Взаимодействие с клиентами: Общение с отправителями и получателями груза, уточнение деталей доставки и адресов.</p>
+        <p>Груз, доставленный в срок и в сохранности из одной точки маршрута в другую.</p>
       </div>
 
       <div class="sec span-2">
@@ -86,37 +96,53 @@
         <div class="equip-tags">
         <span class="tag tag-outline">гсм</span>
         <span class="tag tag-outline">ремкомплект (молоток; домкрат; трос для буксировки, а также цепи на колеса;</span>
-        <span class="tag tag-outline">набор отверток, гаечных ключей; проволока из стали; ветошь;фитинги;гвозди и саморезы;крепкая веревка;</span>
-        <span class="tag tag-outline">запаска;канистры, в которых имеется запас топлива; ведро металлическое;баллон Wd-40;насос ручной;</span>
+        <span class="tag tag-outline">набор отверток, гаечных ключей; проволока из стали; ветошь; фитинги; гвозди и саморезы; крепкая веревка;</span>
+        <span class="tag tag-outline">запаска; канистры, в которых имеется запас топлива; ведро металлическое; баллон Wd-40; насос ручной;</span>
         <span class="tag tag-outline">суперклей.) планшетка, ручка</span>
         </div>
       </div>
 
-      <div class="sec">
-        <h6>Спецодежда и СИЗ</h6>
+      <div class="sec sec-clothing">
+        <h6>Спецодежда</h6>
         <div class="wear-row clothing">
-          <div class="ph">пиктограмма<br>одежды</div>
-          <p>нательное белье
-каска
-футболка
-штаны
-рукавицы
-защитные очки</p>
+          <div class="wear-icon wear-icon-clothing" role="img" aria-label="Спецодежда"></div>
+          <div class="wear-items">
+          <p class="wear-item">нательное белье каска футболка штаны рукавицы защитные очки</p>
+          </div>
         </div>
       </div>
 
-      <div class="sec">
+      <div class="sec sec-footwear">
         <h6>Спецобувь</h6>
         <div class="wear-row footwear">
-          <div class="ph">пиктограмма<br>обуви</div>
-          <p>удобная обувь (кроссовки, ботинки)</p>
+          <div class="wear-icon wear-icon-footwear" role="img" aria-label="Спецобувь"></div>
+          <div class="wear-items">
+          <p class="wear-item">удобная обувь (кроссовки, ботинки)</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="sec sec-siz">
+        <h6>СИЗ</h6>
+        <div class="wear-row siz">
+          
+          <div class="wear-items">
+          <p class="wear-item wear-item-muted">Для этой профессии специальные средства защиты не требуются.</p>
+          </div>
         </div>
       </div>
 
       <div class="sec span-2">
         <h6>Где учиться</h6>
-        <p>23.02.01 ОРГАНИЗАЦИЯ ПЕРЕВОЗОК И УПРАВЛЕНИЕ
-НА ТРАНСПОРТЕ (ПО ВИДАМ)</p>
+        <p class="edu-hint">Это официальное название и номер специальности в колледже или вузе — он понадобится при поступлении.</p>
+        <div class="edu-list">
+        <div class="edu-row">
+            <span class="edu-code">№ 23.02.01</span>
+            <span class="edu-name">ОРГАНИЗАЦИЯ ПЕРЕВОЗОК И УПРАВЛЕНИЕ НА ТРАНСПОРТЕ (ПО ВИДАМ)</span>
+          </div>
+        
+        
+        </div>
       </div>
 
       <div class="sec span-2">
@@ -136,9 +162,10 @@
       </div>
     </div>
 
-    <p class="data-note">Данные — карточка 23 из 160, отрасль «Транспорт и логистика». Зарплата — оценочная вилка по региону.</p>
+    <p class="data-note">Данные по профессии «Водитель грузового автомобиля», отрасль «Транспорт и логистика». Зарплата — оценочная вилка по региону.</p>
   </div>
 
+  </div>
 </main>
 
 <div class="action-bar">

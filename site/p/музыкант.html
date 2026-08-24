@@ -5,6 +5,9 @@
 <title>Музыкант — Электронный каталог профессий</title>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="description" content="Музыкант: чем занимается, сколько зарабатывает в регионе, где учиться и где работать.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700&family=Roboto:wght@400;700&family=Roboto+Mono:wght@400;700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="../styles.css">
 <link rel="stylesheet" href="../page.css">
 </head>
@@ -13,28 +16,35 @@
 <div class="top-brand-bar">
   <img src="../assets/img/logo-dvizhenie-pervyh.svg" alt="Движение Первых · Гранты Первых" class="top-brand-logo">
   <img src="../assets/img/logo-proftracker.svg" alt="АНО «ПРОФТРЕКЕР»" class="top-brand-logo">
+  <div class="top-brand-actions">
+    <a class="home-btn" href="../index.html" aria-label="На главную" title="На главную">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M3 11.5 12 4l9 7.5"/><path d="M5.5 9.5V20h13V9.5"/></svg>
+    </a>
+    <a class="vk-btn" href="https://vk.ru/proftreker" target="_blank" rel="noopener" aria-label="Сообщество ВКонтакте" title="Мы ВКонтакте">VK</a>
+  </div>
 </div>
 
 <header class="topbar">
   <button class="icon-btn" type="button" onclick="history.length>1?history.back():location.href='../catalog.html'" aria-label="Назад">
     <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M19 12H5"/><path d="M12 19l-7-7 7-7"/></svg>
   </button>
-  <div class="crumb">КАРТА 148 · ИСКУССТВО И КРЕАТИВНЫЕ ИНДУСТРИИ</div>
   <button class="icon-btn" type="button" id="bookmark-btn" aria-label="Отметить, чтобы вернуться" aria-pressed="false">
     <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
   </button>
 </header>
 
 <main class="profession">
+  <div class="folder-tab">Музыкант</div>
+  <div class="profession-sheet">
 
   <div class="profession-media">
-    <figure class="blueprint profession-photo has-photo">
-      <i class="corner tl"></i><i class="corner tr"></i><i class="corner bl"></i><i class="corner br"></i>
-      <img src="../assets/img/photos/музыкант.png" alt="Карточка профессии «Музыкант»" loading="lazy">
+    <figure class="profession-photo has-photo">
+      <div class="photo-frame">
+        <img src="../assets/img/photos/музыкант.png" alt="Карточка профессии «Музыкант»" loading="lazy">
+      </div>
     </figure>
 
-    <div class="blueprint stat-grid">
-      <i class="corner tl"></i><i class="corner tr"></i><i class="corner bl"></i><i class="corner br"></i>
+    <div class="stat-grid">
       <div class="stat">
         <div class="stat-label">Зарплата в регионе</div>
         <div class="stat-value" style="font-size:18px">40–90 тыс ₽</div>
@@ -46,43 +56,39 @@
     </div>
 
     <div class="partner-figure profession-partner">
-      <img src="../assets/img/logo-evraz.svg" alt="ЕВРАЗ" class="partner-logo">
+      <span class="partner-logo-zone">
+        <img src="../assets/img/logo-evraz.svg" alt="ЕВРАЗ" class="partner-logo">
+      </span>
       <span class="partner-label">Партнёр проекта</span>
     </div>
+    <div class="partner-caption">
+      <img src="../assets/img/evraz-caption.svg" alt="" class="partner-caption-img">
+    </div>
 
-    <button class="btn btn-primary btn-block blueprint desktop-cta" type="button" id="bookmark-btn-desktop">
-      <i class="corner tl"></i><i class="corner tr"></i><i class="corner bl"></i><i class="corner br"></i>
+    <button class="btn btn-primary btn-block desktop-cta" type="button" id="bookmark-btn-desktop">
       Отметить, чтобы вернуться
     </button>
   </div>
 
   <div class="profession-main">
+    <p class="crumb" style="margin-bottom:6px">ИСКУССТВО И КРЕАТИВНЫЕ ИНДУСТРИИ</p>
     <h1 class="p-title">Музыкант</h1>
     <p class="p-short">Играет и записывает музыку.</p>
 
     <div class="sections">
-      <div class="sec">
+      <div class="sec span-2">
         <h6>Основной вид деятельности</h6>
         <p>Специалист в области музыки — играет на музыкальном инструменте, занимается музыкой профессионально или как знаток и любитель.</p>
       </div>
 
-      <div class="sec">
+      <div class="sec span-2">
         <h6>Что делает на рабочем месте</h6>
         <p>Специалист в области музыки — играет на музыкальном инструменте, занимается музыкой профессионально или как знаток и любитель. Исполнитель-инструменталист играет на одном или нескольких инструментах: на скрипке, ударных, флейте и так далее. Композитор пишет музыку на заказ или для собственного исполнения — для театральных постановок, фильмов, игр. Аранжировщик создаёт новую версию произведения, например добавляет партии для новых инструментов. Вокалист исполняет произведения голосом — поёт песни, но может одновременно играть на инструменте. Дирижёр управляет оркестром, ансамблем, хором, чтобы все инструменты звучали слаженно. Концертмейстер отвечает за определённую группу инструментов в оркестре или аккомпанирует вокалистам. Диджей создаёт из готовых композиций микс с добавлением разных эффектов. Педагог обучает музыке в музыкальной школе или другом образовательном учреждении.</p>
       </div>
 
       <div class="sec span-2">
         <h6>Что производит</h6>
-        <p>Создание музыки: Музыканты пишут собственные песни, музыкальные композиции, аранжировки и мелодии. Они работают над созданием уникальных музыкальных произведений.
-Исполнение музыки: Музыканты исполняют музыку на концертах, в студиях записи, на радио и телевидении, в интернете или на других мероприятиях.
-Запись музыки в студии. Запись требует высокой точности и внимания к деталям, а также умения работать с оборудованием и программами для записи и звуковой обработки. Музыканты могут записывать свои собственные композиции или работать над записью музыки других исполнителей.
-Участие в музыкальных группах: Многие музыканты сотрудничают с другими музыкантами и работают в музыкальных коллективах, таких как группы, оркестры, хоры и ансамбли.
-Репетиции и студийная работа: Музыканты проводят много времени на репетициях, чтобы отточить свое мастерство и подготовиться к выступлениям. Они также могут записывать свои произведения в студиях звукозаписи.
-Учебная деятельность: Многие музыканты также являются преподавателями и делятся своими знаниями и опытом с учащимися.
-Участие в музыкальных проектах: Музыканты могут быть приглашены для участия в различных музыкальных проектах, таких как запись альбомов, фестивали, концерты и музыкальные турне.
-Импровизация: Многие музыканты имеют навыки импровизации и могут создавать музыку на ходу, взаимодействуя с другими музыкантами или аудиторией.
-Продвижение и маркетинг: Некоторые музыканты занимаются продвижением своей музыки, работой с агентами, продюсерами и участием в маркетинговых мероприятиях.
-Постоянное совершенствование своих навыков и знаний. Музыка постоянно развивается, и музыканты должны следить за новыми тенденциями и технологиями, чтобы оставаться востребованными и успешными в своей профессии.</p>
+        <p>Живое выступление или записанный трек — концерт, студийная запись, саундтрек или коллаборация с другими музыкантами.</p>
       </div>
 
       <div class="sec span-2">
@@ -92,25 +98,56 @@
         </div>
       </div>
 
-      <div class="sec">
-        <h6>Спецодежда и СИЗ</h6>
+      <div class="sec sec-clothing">
+        <h6>Спецодежда</h6>
         <div class="wear-row clothing">
-          <div class="ph">пиктограмма<br>одежды</div>
-          <p>Харизматичный внешний вид, вычурность, свойственен гранж в визуализации хип-хопа: рванные и потертые джинсы, вытянутые свитера, массивные металлические украшения, футболки с выцветшими цветами, шляпы и кепки.</p>
+          <div class="wear-icon wear-icon-clothing" role="img" aria-label="Спецодежда"></div>
+          <div class="wear-items">
+          <p class="wear-item">Харизматичный внешний вид, вычурность, свойственен гранж в визуализации хип-хопа: рванные и потертые джинсы, вытянутые свитера, массивные металлические украшения, футболки с выцветшими цветами, шляпы и кепки</p>
+          </div>
         </div>
       </div>
 
-      <div class="sec">
+      <div class="sec sec-footwear">
         <h6>Спецобувь</h6>
         <div class="wear-row footwear">
-          <div class="ph">пиктограмма<br>обуви</div>
-          <p>Современные кросовки, ботинки, туфли на высоком каблуке</p>
+          <div class="wear-icon wear-icon-footwear" role="img" aria-label="Спецобувь"></div>
+          <div class="wear-items">
+          <p class="wear-item">Современные кросовки, ботинки, туфли на высоком каблуке</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="sec sec-siz">
+        <h6>СИЗ</h6>
+        <div class="wear-row siz">
+          
+          <div class="wear-items">
+          <p class="wear-item wear-item-muted">Для этой профессии специальные средства защиты не требуются.</p>
+          </div>
         </div>
       </div>
 
       <div class="sec span-2">
         <h6>Где учиться</h6>
-        <p>53.02.02 Эстрадное пение 53.02.02 Инструменты эстрадного оркестра 53.02.03 Инструментальное исполнительство (по видам инструментов)</p>
+        <p class="edu-hint">Это официальное название и номер специальности в колледже или вузе — он понадобится при поступлении.</p>
+        <div class="edu-list">
+        <div class="edu-row">
+            <span class="edu-code">№ 53.02.02</span>
+            <span class="edu-name">Эстрадное пение</span>
+          </div>
+        <p class="edu-hint edu-more-hint">Ещё варианты, куда можно поступить на эту профессию — подойдёт любой один, учиться сразу на все не нужно:</p>
+        
+          <div class="edu-row">
+            <span class="edu-code">№ 53.02.02</span>
+            <span class="edu-name">Инструменты эстрадного оркестра</span>
+          </div>
+        
+          <div class="edu-row">
+            <span class="edu-code">№ 53.02.03</span>
+            <span class="edu-name">Инструментальное исполнительство (по видам инструментов)</span>
+          </div>
+        </div>
       </div>
 
       <div class="sec span-2">
@@ -130,9 +167,10 @@
       </div>
     </div>
 
-    <p class="data-note">Данные — карточка 148 из 160, отрасль «Искусство и креативные индустрии». Зарплата — оценочная вилка по региону.</p>
+    <p class="data-note">Данные по профессии «Музыкант», отрасль «Искусство и креативные индустрии». Зарплата — оценочная вилка по региону.</p>
   </div>
 
+  </div>
 </main>
 
 <div class="action-bar">

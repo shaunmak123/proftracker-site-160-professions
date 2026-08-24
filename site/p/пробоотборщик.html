@@ -5,6 +5,9 @@
 <title>Пробоотборщик — Электронный каталог профессий</title>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="description" content="Пробоотборщик: чем занимается, сколько зарабатывает в регионе, где учиться и где работать.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700&family=Roboto:wght@400;700&family=Roboto+Mono:wght@400;700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="../styles.css">
 <link rel="stylesheet" href="../page.css">
 </head>
@@ -13,28 +16,35 @@
 <div class="top-brand-bar">
   <img src="../assets/img/logo-dvizhenie-pervyh.svg" alt="Движение Первых · Гранты Первых" class="top-brand-logo">
   <img src="../assets/img/logo-proftracker.svg" alt="АНО «ПРОФТРЕКЕР»" class="top-brand-logo">
+  <div class="top-brand-actions">
+    <a class="home-btn" href="../index.html" aria-label="На главную" title="На главную">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M3 11.5 12 4l9 7.5"/><path d="M5.5 9.5V20h13V9.5"/></svg>
+    </a>
+    <a class="vk-btn" href="https://vk.ru/proftreker" target="_blank" rel="noopener" aria-label="Сообщество ВКонтакте" title="Мы ВКонтакте">VK</a>
+  </div>
 </div>
 
 <header class="topbar">
   <button class="icon-btn" type="button" onclick="history.length>1?history.back():location.href='../catalog.html'" aria-label="Назад">
     <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M19 12H5"/><path d="M12 19l-7-7 7-7"/></svg>
   </button>
-  <div class="crumb">КАРТА 38 · АТОМНАЯ</div>
   <button class="icon-btn" type="button" id="bookmark-btn" aria-label="Отметить, чтобы вернуться" aria-pressed="false">
     <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
   </button>
 </header>
 
 <main class="profession">
+  <div class="folder-tab">Пробоотборщик</div>
+  <div class="profession-sheet">
 
   <div class="profession-media">
-    <figure class="blueprint profession-photo has-photo">
-      <i class="corner tl"></i><i class="corner tr"></i><i class="corner bl"></i><i class="corner br"></i>
-      <img src="../assets/img/photos/пробоотборщик.png" alt="Карточка профессии «Пробоотборщик»" loading="lazy">
+    <figure class="profession-photo has-photo">
+      <div class="photo-frame">
+        <img src="../assets/img/photos/пробоотборщик.png" alt="Карточка профессии «Пробоотборщик»" loading="lazy">
+      </div>
     </figure>
 
-    <div class="blueprint stat-grid">
-      <i class="corner tl"></i><i class="corner tr"></i><i class="corner bl"></i><i class="corner br"></i>
+    <div class="stat-grid">
       <div class="stat">
         <div class="stat-label">Зарплата в регионе</div>
         <div class="stat-value" style="font-size:18px">45–70 тыс ₽</div>
@@ -46,27 +56,32 @@
     </div>
 
     <div class="partner-figure profession-partner">
-      <img src="../assets/img/logo-evraz.svg" alt="ЕВРАЗ" class="partner-logo">
+      <span class="partner-logo-zone">
+        <img src="../assets/img/logo-evraz.svg" alt="ЕВРАЗ" class="partner-logo">
+      </span>
       <span class="partner-label">Партнёр проекта</span>
     </div>
+    <div class="partner-caption">
+      <img src="../assets/img/evraz-caption.svg" alt="" class="partner-caption-img">
+    </div>
 
-    <button class="btn btn-primary btn-block blueprint desktop-cta" type="button" id="bookmark-btn-desktop">
-      <i class="corner tl"></i><i class="corner tr"></i><i class="corner bl"></i><i class="corner br"></i>
+    <button class="btn btn-primary btn-block desktop-cta" type="button" id="bookmark-btn-desktop">
       Отметить, чтобы вернуться
     </button>
   </div>
 
   <div class="profession-main">
+    <p class="crumb" style="margin-bottom:6px">АТОМНАЯ</p>
     <h1 class="p-title">Пробоотборщик</h1>
     <p class="p-short">Берёт пробы там, где обычному человеку нельзя.</p>
 
     <div class="sections">
-      <div class="sec">
+      <div class="sec span-2">
         <h6>Основной вид деятельности</h6>
         <p>Отбирает пробы веществ и материалов на объекте атомной отрасли для последующего лабораторного анализа.</p>
       </div>
 
-      <div class="sec">
+      <div class="sec span-2">
         <h6>Что делает на рабочем месте</h6>
         <p>Пробоотборщик берёт образцы воды, воздуха, грунта или технологических жидкостей на разных участках предприятия так, чтобы проба точно отражала реальное состояние среды — от этого зависит достоверность всех дальнейших анализов. Перед отбором проверяет радиационный фон на месте промышленным дозиметром, чтобы оценить, безопасно ли находиться в этой точке и сколько времени. Собранные образцы маркирует и в кратчайшие сроки передаёт в лабораторию, где их исследуют на содержание радионуклидов, химический состав или другие показатели. Работает по строгому графику отбора проб, установленному нормативами предприятия, и фиксирует каждый отбор в документации. Часто перемещается между разными зонами объекта — от вентиляционных систем до водоёмов-охладителей, — поэтому должен хорошо ориентироваться на территории и в правилах доступа. Как и другие работники контролируемой зоны, носит белую спецодежду атомщика — комбинезон, каску и респиратор.</p>
       </div>
@@ -79,30 +94,55 @@
       <div class="sec span-2">
         <h6>Оборудование и инструменты</h6>
         <div class="equip-tags">
-        <span class="tag tag-outline">Приборы радиационного контроля - промышленные дозиметры</span>
+        <span class="tag tag-outline">Приборы радиационного контроля — промышленные дозиметры</span>
         </div>
       </div>
 
-      <div class="sec">
-        <h6>Спецодежда и СИЗ</h6>
+      <div class="sec sec-clothing">
+        <h6>Спецодежда</h6>
         <div class="wear-row clothing">
-          <div class="ph">пиктограмма<br>одежды</div>
-          <p>Белая спецодежда атомщика (каски, спецовки и комбинезоны, респираторы)</p>
+          <div class="wear-icon wear-icon-clothing" role="img" aria-label="Спецодежда"></div>
+          <div class="wear-items">
+          <p class="wear-item">Белая спецодежда атомщика (каски, спецовки и комбинезоны, респираторы)</p>
+          </div>
         </div>
       </div>
 
-      <div class="sec">
+      <div class="sec sec-footwear">
         <h6>Спецобувь</h6>
         <div class="wear-row footwear">
-          <div class="ph">пиктограмма<br>обуви</div>
-          <p>Белая спецобувь</p>
+          <div class="wear-icon wear-icon-footwear" role="img" aria-label="Спецобувь"></div>
+          <div class="wear-items">
+          <p class="wear-item">Белая спецобувь</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="sec sec-siz">
+        <h6>СИЗ</h6>
+        <div class="wear-row siz">
+          
+          <div class="wear-items">
+          <p class="wear-item wear-item-muted">Для этой профессии специальные средства защиты не требуются.</p>
+          </div>
         </div>
       </div>
 
       <div class="sec span-2">
         <h6>Где учиться</h6>
-        <p>18.01.33 Лаборант по контролю качества сырья, реактивов, промежуточных продуктов, готовой продукции, отходов производства (по отраслям)
-20.02.01 РАЦИОНАЛЬНОЕ ИСПОЛЬЗОВАНИЕ ПРИРОДОХОЗЯЙСТВЕННЫХ КОМПЛЕКСОВ</p>
+        <p class="edu-hint">Это официальное название и номер специальности в колледже или вузе — он понадобится при поступлении.</p>
+        <div class="edu-list">
+        <div class="edu-row">
+            <span class="edu-code">№ 18.01.33</span>
+            <span class="edu-name">Лаборант по контролю качества сырья, реактивов, промежуточных продуктов, готовой продукции, отходов производства (по отраслям)</span>
+          </div>
+        <p class="edu-hint edu-more-hint">Ещё варианты, куда можно поступить на эту профессию — подойдёт любой один, учиться сразу на все не нужно:</p>
+        
+          <div class="edu-row">
+            <span class="edu-code">№ 20.02.01</span>
+            <span class="edu-name">РАЦИОНАЛЬНОЕ ИСПОЛЬЗОВАНИЕ ПРИРОДОХОЗЯЙСТВЕННЫХ КОМПЛЕКСОВ</span>
+          </div>
+        </div>
       </div>
 
       <div class="sec span-2">
@@ -122,9 +162,10 @@
       </div>
     </div>
 
-    <p class="data-note">Данные — карточка 38 из 160, отрасль «Атомная». Зарплата — оценочная вилка по региону.</p>
+    <p class="data-note">Данные по профессии «Пробоотборщик», отрасль «Атомная». Зарплата — оценочная вилка по региону.</p>
   </div>
 
+  </div>
 </main>
 
 <div class="action-bar">

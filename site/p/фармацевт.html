@@ -5,6 +5,9 @@
 <title>Фармацевт — Электронный каталог профессий</title>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="description" content="Фармацевт: чем занимается, сколько зарабатывает в регионе, где учиться и где работать.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700&family=Roboto:wght@400;700&family=Roboto+Mono:wght@400;700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="../styles.css">
 <link rel="stylesheet" href="../page.css">
 </head>
@@ -13,28 +16,35 @@
 <div class="top-brand-bar">
   <img src="../assets/img/logo-dvizhenie-pervyh.svg" alt="Движение Первых · Гранты Первых" class="top-brand-logo">
   <img src="../assets/img/logo-proftracker.svg" alt="АНО «ПРОФТРЕКЕР»" class="top-brand-logo">
+  <div class="top-brand-actions">
+    <a class="home-btn" href="../index.html" aria-label="На главную" title="На главную">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M3 11.5 12 4l9 7.5"/><path d="M5.5 9.5V20h13V9.5"/></svg>
+    </a>
+    <a class="vk-btn" href="https://vk.ru/proftreker" target="_blank" rel="noopener" aria-label="Сообщество ВКонтакте" title="Мы ВКонтакте">VK</a>
+  </div>
 </div>
 
 <header class="topbar">
   <button class="icon-btn" type="button" onclick="history.length>1?history.back():location.href='../catalog.html'" aria-label="Назад">
     <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M19 12H5"/><path d="M12 19l-7-7 7-7"/></svg>
   </button>
-  <div class="crumb">КАРТА 16 · ХИМИЧЕСКАЯ</div>
   <button class="icon-btn" type="button" id="bookmark-btn" aria-label="Отметить, чтобы вернуться" aria-pressed="false">
     <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
   </button>
 </header>
 
 <main class="profession">
+  <div class="folder-tab">Фармацевт</div>
+  <div class="profession-sheet">
 
   <div class="profession-media">
-    <figure class="blueprint profession-photo has-photo">
-      <i class="corner tl"></i><i class="corner tr"></i><i class="corner bl"></i><i class="corner br"></i>
-      <img src="../assets/img/photos/фармацевт.png" alt="Карточка профессии «Фармацевт»" loading="lazy">
+    <figure class="profession-photo has-photo">
+      <div class="photo-frame">
+        <img src="../assets/img/photos/фармацевт.png" alt="Карточка профессии «Фармацевт»" loading="lazy">
+      </div>
     </figure>
 
-    <div class="blueprint stat-grid">
-      <i class="corner tl"></i><i class="corner tr"></i><i class="corner bl"></i><i class="corner br"></i>
+    <div class="stat-grid">
       <div class="stat">
         <div class="stat-label">Зарплата в регионе</div>
         <div class="stat-value" style="font-size:18px">45–75 тыс ₽</div>
@@ -46,51 +56,46 @@
     </div>
 
     <div class="partner-figure profession-partner">
-      <img src="../assets/img/logo-evraz.svg" alt="ЕВРАЗ" class="partner-logo">
+      <span class="partner-logo-zone">
+        <img src="../assets/img/logo-evraz.svg" alt="ЕВРАЗ" class="partner-logo">
+      </span>
       <span class="partner-label">Партнёр проекта</span>
     </div>
+    <div class="partner-caption">
+      <img src="../assets/img/evraz-caption.svg" alt="" class="partner-caption-img">
+    </div>
 
-    <button class="btn btn-primary btn-block blueprint desktop-cta" type="button" id="bookmark-btn-desktop">
-      <i class="corner tl"></i><i class="corner tr"></i><i class="corner bl"></i><i class="corner br"></i>
+    <button class="btn btn-primary btn-block desktop-cta" type="button" id="bookmark-btn-desktop">
       Отметить, чтобы вернуться
     </button>
   </div>
 
   <div class="profession-main">
+    <p class="crumb" style="margin-bottom:6px">ХИМИЧЕСКАЯ</p>
     <h1 class="p-title">Фармацевт</h1>
     <p class="p-short">Выдаёт лекарства и готовит их по рецепту.</p>
 
     <div class="sections">
-      <div class="sec">
+      <div class="sec span-2">
         <h6>Основной вид деятельности</h6>
         <p>Специалист, который занимается изготовлением, хранением, отпуском и контролем качества лекарственных средств.</p>
       </div>
 
-      <div class="sec">
+      <div class="sec span-2">
         <h6>Что делает на рабочем месте</h6>
         <p>Фармацевт стоит за первым столом аптеки — принимает рецепты, подбирает нужный препарат и объясняет покупателю, как его принимать, в какой дозировке и с чем нельзя сочетать. Часть лекарственных форм — мази, растворы, порошки — готовит прямо в аптеке: отвешивает компоненты на аптечных весах, растирает вещество в фарфоровой ступке, дозирует порошки специальным дозатором и фильтрует растворы через фильтровальный аппарат. Следит за сроками годности препаратов на витрине и складе, принимает и проверяет поставки, сверяя сопроводительные документы с фактическим товаром. Работает у ассистентских столов и поворотных шкафов, где разложены сотни наименований лекарств, и должен точно помнить, что где лежит, чтобы не задерживать очередь. Помимо продажи, ведёт учёт и инвентаризацию медикаментов, а также следит за санитарными нормами на рабочем месте. Из спецодежды — только медицинский халат и удобная обувь: за смену фармацевт проводит на ногах много часов.</p>
       </div>
 
       <div class="sec span-2">
         <h6>Что производит</h6>
-        <p>Консультирование пациентов по вопросам правильного применения лекарственных препаратов, их побочных эффектов и взаимодействия с другими медикаментами.
-Выдача лекарств по рецептам врачей, а также реализация безрецептурных препаратов.
-Приготовление лекарственных форм (например, мазей, растворов, сиропов) в аптечных условиях.
-Контроль за сроками годности лекарственных препаратов и их правильное хранение.
-Закупка и приемка лекарств от поставщиков, проверка сопроводительной документации на соответствие стандартам и нормативам.
-Учет и инвентаризация лекарственных препаратов на складе и в аптечном зале.
-Соблюдение санитарных и гигиенических норм в рабочем месте.
-Обучение и консультирование младшего аптечного персонала.
-Сотрудничество с врачами и другими медицинскими специалистами в вопросах лечения и правильного применения лекарств.
-Постоянное профессиональное развитие, изучение новых лекарственных препаратов и их свойств, участие в фармацевтических тренингах и семинарах.
-Соблюдение законодательства в области оборота лекарственных средств и продукции.</p>
+        <p>Отпущенные лекарства — по рецепту или без — и изготовленные в аптеке лекарственные формы.</p>
       </div>
 
       <div class="sec span-2">
         <h6>Оборудование и инструменты</h6>
         <div class="equip-tags">
-        <span class="tag tag-outline">Оборудование для залов обслуживания: Поворотные секционные шкафы и блоки., столы рецептара, набор типового унифицированного оборудования</span>
-        <span class="tag tag-outline">Оборудование для ассистентских комнат: ассистенсткие столы, стол подсобный, стулья рабочие аптечные унифицированные, тумба с лотками,тумба с вертушкой, вертушки (напольная, настольная, для реактивов), шкафы для хранения медикаментов, тележка аптечная</span>
+        <span class="tag tag-outline">Оборудование для залов обслуживания: Поворотные секционные шкафы и блоки, столы рецептара, набор типового унифицированного оборудования</span>
+        <span class="tag tag-outline">Оборудование для ассистентских комнат: ассистенсткие столы, стол подсобный, стулья рабочие аптечные унифицированные, тумба с лотками, тумба с вертушкой, вертушки (напольная, настольная, для реактивов), шкафы для хранения медикаментов, тележка аптечная</span>
         <span class="tag tag-outline">Оборудование для отдела запасов (материальные комнаты): шкафы унифицированные</span>
         <span class="tag tag-outline">Средства механизации</span>
         <span class="tag tag-outline">Для измельчения и смешивания: ступки фарфоровые, универсальный аптечный аппарат, инструмент для слежавшихся солей, размельчители</span>
@@ -101,25 +106,47 @@
         </div>
       </div>
 
-      <div class="sec">
-        <h6>Спецодежда и СИЗ</h6>
+      <div class="sec sec-clothing">
+        <h6>Спецодежда</h6>
         <div class="wear-row clothing">
-          <div class="ph">пиктограмма<br>одежды</div>
-          <p>медицинский халат</p>
+          <div class="wear-icon wear-icon-clothing" role="img" aria-label="Спецодежда"></div>
+          <div class="wear-items">
+          <p class="wear-item">медицинский халат</p>
+          </div>
         </div>
       </div>
 
-      <div class="sec">
+      <div class="sec sec-footwear">
         <h6>Спецобувь</h6>
         <div class="wear-row footwear">
-          <div class="ph">пиктограмма<br>обуви</div>
-          <p>удобная обувь: кроссовки, сабо</p>
+          <div class="wear-icon wear-icon-footwear" role="img" aria-label="Спецобувь"></div>
+          <div class="wear-items">
+          <p class="wear-item">удобная обувь: кроссовки, сабо</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="sec sec-siz">
+        <h6>СИЗ</h6>
+        <div class="wear-row siz">
+          
+          <div class="wear-items">
+          <p class="wear-item wear-item-muted">Для этой профессии специальные средства защиты не требуются.</p>
+          </div>
         </div>
       </div>
 
       <div class="sec span-2">
         <h6>Где учиться</h6>
-        <p>33.02.01 «Фармация»</p>
+        <p class="edu-hint">Это официальное название и номер специальности в колледже или вузе — он понадобится при поступлении.</p>
+        <div class="edu-list">
+        <div class="edu-row">
+            <span class="edu-code">№ 33.02.01</span>
+            <span class="edu-name">«Фармация»</span>
+          </div>
+        
+        
+        </div>
       </div>
 
       <div class="sec span-2">
@@ -139,9 +166,10 @@
       </div>
     </div>
 
-    <p class="data-note">Данные — карточка 16 из 160, отрасль «Химическая». Зарплата — оценочная вилка по региону.</p>
+    <p class="data-note">Данные по профессии «Фармацевт», отрасль «Химическая». Зарплата — оценочная вилка по региону.</p>
   </div>
 
+  </div>
 </main>
 
 <div class="action-bar">

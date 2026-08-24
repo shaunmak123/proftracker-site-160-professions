@@ -5,6 +5,9 @@
 <title>Геолог-нефтяник — Электронный каталог профессий</title>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="description" content="Геолог-нефтяник: чем занимается, сколько зарабатывает в регионе, где учиться и где работать.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700&family=Roboto:wght@400;700&family=Roboto+Mono:wght@400;700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="../styles.css">
 <link rel="stylesheet" href="../page.css">
 </head>
@@ -13,28 +16,35 @@
 <div class="top-brand-bar">
   <img src="../assets/img/logo-dvizhenie-pervyh.svg" alt="Движение Первых · Гранты Первых" class="top-brand-logo">
   <img src="../assets/img/logo-proftracker.svg" alt="АНО «ПРОФТРЕКЕР»" class="top-brand-logo">
+  <div class="top-brand-actions">
+    <a class="home-btn" href="../index.html" aria-label="На главную" title="На главную">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M3 11.5 12 4l9 7.5"/><path d="M5.5 9.5V20h13V9.5"/></svg>
+    </a>
+    <a class="vk-btn" href="https://vk.ru/proftreker" target="_blank" rel="noopener" aria-label="Сообщество ВКонтакте" title="Мы ВКонтакте">VK</a>
+  </div>
 </div>
 
 <header class="topbar">
   <button class="icon-btn" type="button" onclick="history.length>1?history.back():location.href='../catalog.html'" aria-label="Назад">
     <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M19 12H5"/><path d="M12 19l-7-7 7-7"/></svg>
   </button>
-  <div class="crumb">КАРТА 3 · ГОРНО-ДОБЫВАЮЩАЯ</div>
   <button class="icon-btn" type="button" id="bookmark-btn" aria-label="Отметить, чтобы вернуться" aria-pressed="false">
     <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
   </button>
 </header>
 
 <main class="profession">
+  <div class="folder-tab">Геолог-нефтяник</div>
+  <div class="profession-sheet">
 
   <div class="profession-media">
-    <figure class="blueprint profession-photo has-photo">
-      <i class="corner tl"></i><i class="corner tr"></i><i class="corner bl"></i><i class="corner br"></i>
-      <img src="../assets/img/photos/геолог-нефтяник.png" alt="Карточка профессии «Геолог-нефтяник»" loading="lazy">
+    <figure class="profession-photo has-photo">
+      <div class="photo-frame">
+        <img src="../assets/img/photos/геолог-нефтяник.png" alt="Карточка профессии «Геолог-нефтяник»" loading="lazy">
+      </div>
     </figure>
 
-    <div class="blueprint stat-grid">
-      <i class="corner tl"></i><i class="corner tr"></i><i class="corner bl"></i><i class="corner br"></i>
+    <div class="stat-grid">
       <div class="stat">
         <div class="stat-label">Зарплата в регионе</div>
         <div class="stat-value" style="font-size:18px">90–160 тыс ₽</div>
@@ -46,41 +56,39 @@
     </div>
 
     <div class="partner-figure profession-partner">
-      <img src="../assets/img/logo-evraz.svg" alt="ЕВРАЗ" class="partner-logo">
+      <span class="partner-logo-zone">
+        <img src="../assets/img/logo-evraz.svg" alt="ЕВРАЗ" class="partner-logo">
+      </span>
       <span class="partner-label">Партнёр проекта</span>
     </div>
+    <div class="partner-caption">
+      <img src="../assets/img/evraz-caption.svg" alt="" class="partner-caption-img">
+    </div>
 
-    <button class="btn btn-primary btn-block blueprint desktop-cta" type="button" id="bookmark-btn-desktop">
-      <i class="corner tl"></i><i class="corner tr"></i><i class="corner bl"></i><i class="corner br"></i>
+    <button class="btn btn-primary btn-block desktop-cta" type="button" id="bookmark-btn-desktop">
       Отметить, чтобы вернуться
     </button>
   </div>
 
   <div class="profession-main">
+    <p class="crumb" style="margin-bottom:6px">ГОРНО-ДОБЫВАЮЩАЯ</p>
     <h1 class="p-title">Геолог-нефтяник</h1>
     <p class="p-short">Находит нефть и газ по данным разведки.</p>
 
     <div class="sections">
-      <div class="sec">
+      <div class="sec span-2">
         <h6>Основной вид деятельности</h6>
         <p>Ищет нефтегазовые месторождения и оценивает, сколько сырья можно добыть из уже разведанных скважин.</p>
       </div>
 
-      <div class="sec">
+      <div class="sec span-2">
         <h6>Что делает на рабочем месте</h6>
         <p>Геолог-нефтяник изучает геологические карты и геофизические данные, чтобы понять, где под землёй может скрываться нефтяной или газовый пласт. Он анализирует пробы грунта и горных пород, определяет структуру и свойства нефтеносных пластов, а затем на основе гидродинамических исследований рассчитывает, сколько сырья реально можно извлечь из месторождения. Работа не заканчивается на разведке: специалист постоянно следит за условиями работы уже действующих скважин и участвует в разработке планов добычи, предлагая, как увеличить её объём и снизить затраты. В поле пользуется тем же набором, что и геолог, — горным компасом, спутниковыми трекерами, флаконами с соляной кислотой для проверки породы на карбонатность — и ведёт полевой дневник. От укусов насекомых и непогоды его защищает противоэнцефалитный костюм и каска с подшлемником, а сапоги с водоотталкивающим покрытием спасают от сырости на буровой площадке.</p>
       </div>
 
       <div class="sec span-2">
         <h6>Что производит</h6>
-        <p>изучение геологических карт и анализ геофизических данных;
-мониторинг условий работы скважин;
-участие в разработке планов для добычи нефти;
-проведение гидродинамических исследований;
-обнаружение нефтеносных пластов, определение их структуры и свойств;
-забор и анализ проб грунта и горных пород;
-определение объемов запасов нефти и газа в месторождении;
-разработка стратегии для увеличения добычи нефти и снижения затрат на добычу.</p>
+        <p>Данные о запасах и границах нефтяных и газовых месторождений, на основе которых планируют бурение скважин.</p>
       </div>
 
       <div class="sec span-2">
@@ -91,36 +99,53 @@
         <span class="tag tag-outline">Спутниковые трекеры</span>
         <span class="tag tag-outline">Измерительные рулетки</span>
         <span class="tag tag-outline">Буссоли.</span>
-        <span class="tag tag-outline">флаконы с соляной кислотой (для определения карбонатности), оберточная бумага (для сохранности образцов), этикетные книжки (для подписи отдельных элементов).  контейнеры для хранения золотых частиц, пинцеты и закрывающиеся пробирки. полевая сумка и дневник.</span>
+        <span class="tag tag-outline">флаконы с соляной кислотой (для определения карбонатности), обёрточная бумага (для сохранности образцов), этикетные книжки (для подписи отдельных элементов). контейнеры для хранения золотых частиц, пинцеты и закрывающиеся пробирки. полевая сумка и дневник.</span>
         <span class="tag tag-outline">Если экспедиция проводится впервые на необустроенной площадке, с собой специалисты берут палатки, спальные мешки для ночевки и безопасного отдыха</span>
         </div>
       </div>
 
-      <div class="sec">
-        <h6>Спецодежда и СИЗ</h6>
+      <div class="sec sec-clothing">
+        <h6>Спецодежда</h6>
         <div class="wear-row clothing">
-          <div class="ph">пиктограмма<br>одежды</div>
-          <p>брюки
-куртка (снабжена регулируемым капюшоном, а также накладками на плечах и локтях)
-комбинезон или полукомбинезон
-противоэнцефалитные костюмы с эластичными лентами и шнурами для затягивания капюшона, рукавов и низа брюк. Куртка такого костюма снабжена капюшоном со вставкой из противомоскитной сетки.
-каска
-подшлемник под каску</p>
+          <div class="wear-icon wear-icon-clothing" role="img" aria-label="Спецодежда"></div>
+          <div class="wear-items">
+          <p class="wear-item">брюки куртка (снабжена регулируемым капюшоном, а также накладками на плечах и локтях) комбинезон или полукомбинезон противоэнцефалитные костюмы с эластичными лентами и шнурами для затягивания капюшона, рукавов и низа брюк</p>
+          <p class="wear-item">Куртка такого костюма снабжена капюшоном со вставкой из противомоскитной сетки. каска подшлемник под каску</p>
+          </div>
         </div>
       </div>
 
-      <div class="sec">
+      <div class="sec sec-footwear">
         <h6>Спецобувь</h6>
         <div class="wear-row footwear">
-          <div class="ph">пиктограмма<br>обуви</div>
-          <p>носки или войлочные портянки
-сапоги, полусапоги, ботинки (с водооталкивающим покрытием)</p>
+          <div class="wear-icon wear-icon-footwear" role="img" aria-label="Спецобувь"></div>
+          <div class="wear-items">
+          <p class="wear-item">носки или войлочные портянки сапоги, полусапоги, ботинки (с водооталкивающим покрытием)</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="sec sec-siz">
+        <h6>СИЗ</h6>
+        <div class="wear-row siz">
+          
+          <div class="wear-items">
+          <p class="wear-item wear-item-muted">Для этой профессии специальные средства защиты не требуются.</p>
+          </div>
         </div>
       </div>
 
       <div class="sec span-2">
         <h6>Где учиться</h6>
-        <p>21.02.10 Геология и разведка нефтяных и газовых месторождений</p>
+        <p class="edu-hint">Это официальное название и номер специальности в колледже или вузе — он понадобится при поступлении.</p>
+        <div class="edu-list">
+        <div class="edu-row">
+            <span class="edu-code">№ 21.02.10</span>
+            <span class="edu-name">Геология и разведка нефтяных и газовых месторождений</span>
+          </div>
+        
+        
+        </div>
       </div>
 
       <div class="sec span-2">
@@ -140,9 +165,10 @@
       </div>
     </div>
 
-    <p class="data-note">Данные — карточка 3 из 160, отрасль «Горно-добывающая». Зарплата — оценочная вилка по региону.</p>
+    <p class="data-note">Данные по профессии «Геолог-нефтяник», отрасль «Горно-добывающая». Зарплата — оценочная вилка по региону.</p>
   </div>
 
+  </div>
 </main>
 
 <div class="action-bar">

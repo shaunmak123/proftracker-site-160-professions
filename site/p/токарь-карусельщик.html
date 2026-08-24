@@ -5,6 +5,9 @@
 <title>Токарь карусельщик — Электронный каталог профессий</title>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="description" content="Токарь карусельщик: чем занимается, сколько зарабатывает в регионе, где учиться и где работать.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700&family=Roboto:wght@400;700&family=Roboto+Mono:wght@400;700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="../styles.css">
 <link rel="stylesheet" href="../page.css">
 </head>
@@ -13,28 +16,35 @@
 <div class="top-brand-bar">
   <img src="../assets/img/logo-dvizhenie-pervyh.svg" alt="Движение Первых · Гранты Первых" class="top-brand-logo">
   <img src="../assets/img/logo-proftracker.svg" alt="АНО «ПРОФТРЕКЕР»" class="top-brand-logo">
+  <div class="top-brand-actions">
+    <a class="home-btn" href="../index.html" aria-label="На главную" title="На главную">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M3 11.5 12 4l9 7.5"/><path d="M5.5 9.5V20h13V9.5"/></svg>
+    </a>
+    <a class="vk-btn" href="https://vk.ru/proftreker" target="_blank" rel="noopener" aria-label="Сообщество ВКонтакте" title="Мы ВКонтакте">VK</a>
+  </div>
 </div>
 
 <header class="topbar">
   <button class="icon-btn" type="button" onclick="history.length>1?history.back():location.href='../catalog.html'" aria-label="Назад">
     <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M19 12H5"/><path d="M12 19l-7-7 7-7"/></svg>
   </button>
-  <div class="crumb">КАРТА 60 · МАШИНОСТРОЕНИЕ</div>
   <button class="icon-btn" type="button" id="bookmark-btn" aria-label="Отметить, чтобы вернуться" aria-pressed="false">
     <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
   </button>
 </header>
 
 <main class="profession">
+  <div class="folder-tab">Токарь карусельщик</div>
+  <div class="profession-sheet">
 
   <div class="profession-media">
-    <figure class="blueprint profession-photo has-photo">
-      <i class="corner tl"></i><i class="corner tr"></i><i class="corner bl"></i><i class="corner br"></i>
-      <img src="../assets/img/photos/токарь-карусельщик.png" alt="Карточка профессии «Токарь карусельщик»" loading="lazy">
+    <figure class="profession-photo has-photo">
+      <div class="photo-frame">
+        <img src="../assets/img/photos/токарь-карусельщик.png" alt="Карточка профессии «Токарь карусельщик»" loading="lazy">
+      </div>
     </figure>
 
-    <div class="blueprint stat-grid">
-      <i class="corner tl"></i><i class="corner tr"></i><i class="corner bl"></i><i class="corner br"></i>
+    <div class="stat-grid">
       <div class="stat">
         <div class="stat-label">Зарплата в регионе</div>
         <div class="stat-value" style="font-size:18px">65–115 тыс ₽</div>
@@ -46,48 +56,39 @@
     </div>
 
     <div class="partner-figure profession-partner">
-      <img src="../assets/img/logo-evraz.svg" alt="ЕВРАЗ" class="partner-logo">
+      <span class="partner-logo-zone">
+        <img src="../assets/img/logo-evraz.svg" alt="ЕВРАЗ" class="partner-logo">
+      </span>
       <span class="partner-label">Партнёр проекта</span>
     </div>
+    <div class="partner-caption">
+      <img src="../assets/img/evraz-caption.svg" alt="" class="partner-caption-img">
+    </div>
 
-    <button class="btn btn-primary btn-block blueprint desktop-cta" type="button" id="bookmark-btn-desktop">
-      <i class="corner tl"></i><i class="corner tr"></i><i class="corner bl"></i><i class="corner br"></i>
+    <button class="btn btn-primary btn-block desktop-cta" type="button" id="bookmark-btn-desktop">
       Отметить, чтобы вернуться
     </button>
   </div>
 
   <div class="profession-main">
+    <p class="crumb" style="margin-bottom:6px">МАШИНОСТРОЕНИЕ</p>
     <h1 class="p-title">Токарь карусельщик</h1>
     <p class="p-short">Обтачивает огромные детали на карусельном станке.</p>
 
     <div class="sections">
-      <div class="sec">
+      <div class="sec span-2">
         <h6>Основной вид деятельности</h6>
         <p>Обрабатывает крупногабаритные детали цилиндрической формы на карусельном токарном станке.</p>
       </div>
 
-      <div class="sec">
+      <div class="sec span-2">
         <h6>Что делает на рабочем месте</h6>
         <p>Токарь-карусельщик работает с деталями, которые не поместятся в обычный токарный станок, — крупными венцами зубчатых колёс, втулками, фланцами, кольцами и заготовками диаметром до 750 миллиметров и больше, которые закрепляются на вращающемся горизонтальном столе карусельного станка. Растачивает отверстия, протачивает наружный диаметр, подрезает торцы и снимает фаски — например, у днищ и крышек резервуаров или подушек для прокатных станов. Из-за большого размера заготовки токарь-карусельщик тщательно выверяет её положение угольником и измерительным инструментом перед началом обработки, потому что сместить многотонную деталь на ходу уже невозможно. Резец подбирает под конкретный материал и вид обработки, а скорость вращения стола — под диаметр и массу заготовки, чтобы избежать вибрации. При обработке крупных стальных слитков дополнительно надевает фартук из полимерного материала поверх костюма, защищаясь от горячей окалины и стружки. Работает в костюме для защиты от загрязнений, каске, защитных очках и с защитой органов слуха — карусельный станок с крупной деталью создаёт постоянный гул и вибрацию в цехе.</p>
       </div>
 
       <div class="sec span-2">
         <h6>Что производит</h6>
-        <p>Бегуны (катки) диаметром до 750 мм - предварительная обработка.
-
-Венцы зубчатых колес - предварительная обточка наружного диаметра и расточка отверстий.
-
-Втулки цилиндрические, фланцы и кольца диаметром до 750 мм - предварительная обработка.
-
-Днища и крышки резервуаров, котлов диаметром до 750 мм - подрезание торца и снятие фаски.
-
-Колеса с длиной ступицы до 500 мм - предварительная проточка и расточка.
-
-Кольца поршневые, шестерни цилиндрические, шкивы гладкие, муфты и ободы - предварительная обработка.
-
-Надставки изложниц и поддоны для глухих изложниц - подрезание торцов.
-
-Подушки для прокатных станов - предварительная обработка.</p>
+        <p>Крупные детали для промышленного оборудования — катки, кольца, шкивы, венцы зубчатых колёс и другие заготовки, обточенные на карусельном станке.</p>
       </div>
 
       <div class="sec span-2">
@@ -97,35 +98,56 @@
         </div>
       </div>
 
-      <div class="sec">
-        <h6>Спецодежда и СИЗ</h6>
+      <div class="sec sec-clothing">
+        <h6>Спецодежда</h6>
         <div class="wear-row clothing">
-          <div class="ph">пиктограмма<br>одежды</div>
-          <p>Костюм для защиты от общих производственных загрязнений и механических воздействий
-Куртка на утепляющей прокладке
-Перчатки с полимерным покрытием
-Каска защитная
-Подшлемник под каску
-Очки защитные
-Наушники противошумные (с креплением на каску) илидо износа
-Вкладыши противошумныедо износа
-Средство индивидуальной защиты органов дыхания (СИЗОД) противоаэрозольноедо износа
-При выполнении работы по обработке слитков дополнительно:
-Фартук из полимерных материалов</p>
+          <div class="wear-icon wear-icon-clothing" role="img" aria-label="Спецодежда"></div>
+          <div class="wear-items">
+          <p class="wear-item">Костюм для защиты от общих производственных загрязнений и механических воздействий</p>
+          <p class="wear-item">Куртка на утепляющей прокладке</p>
+          <p class="wear-item">При выполнении работы по обработке слитков дополнительно:</p>
+          <p class="wear-item">Фартук из полимерных материалов</p>
+          </div>
         </div>
       </div>
 
-      <div class="sec">
+      <div class="sec sec-footwear">
         <h6>Спецобувь</h6>
         <div class="wear-row footwear">
-          <div class="ph">пиктограмма<br>обуви</div>
-          <p>Ботинки кожаные с защитным подноском или Сапоги кожаные с защитным подноском</p>
+          <div class="wear-icon wear-icon-footwear" role="img" aria-label="Спецобувь"></div>
+          <div class="wear-items">
+          <p class="wear-item">Ботинки кожаные с защитным подноском или Сапоги кожаные с защитным подноском</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="sec sec-siz">
+        <h6>СИЗ</h6>
+        <div class="wear-row siz">
+          <div class="wear-icon wear-icon-siz" role="img" aria-label="СИЗ"></div>
+          <div class="wear-items">
+          <p class="wear-item">Перчатки с полимерным покрытием</p>
+          <p class="wear-item">Каска защитная</p>
+          <p class="wear-item">Подшлемник под каску</p>
+          <p class="wear-item">Очки защитные</p>
+          <p class="wear-item">Наушники противошумные (с креплением на каску) илидо износа</p>
+          <p class="wear-item">Вкладыши противошумныедо износа</p>
+          <p class="wear-item">Средство индивидуальной защиты органов дыхания (СИЗОД) противоаэрозольноедо износа</p>
+          </div>
         </div>
       </div>
 
       <div class="sec span-2">
         <h6>Где учиться</h6>
-        <p>15.01.33 ТОКАРЬ НА СТАНКАХ С ЧИСЛОВЫМ ПРОГРАММНЫМ УПРАВЛЕНИЕМ</p>
+        <p class="edu-hint">Это официальное название и номер специальности в колледже или вузе — он понадобится при поступлении.</p>
+        <div class="edu-list">
+        <div class="edu-row">
+            <span class="edu-code">№ 15.01.33</span>
+            <span class="edu-name">ТОКАРЬ НА СТАНКАХ С ЧИСЛОВЫМ ПРОГРАММНЫМ УПРАВЛЕНИЕМ</span>
+          </div>
+        
+        
+        </div>
       </div>
 
       <div class="sec span-2">
@@ -145,9 +167,10 @@
       </div>
     </div>
 
-    <p class="data-note">Данные — карточка 60 из 160, отрасль «Машиностроение». Зарплата — оценочная вилка по региону.</p>
+    <p class="data-note">Данные по профессии «Токарь карусельщик», отрасль «Машиностроение». Зарплата — оценочная вилка по региону.</p>
   </div>
 
+  </div>
 </main>
 
 <div class="action-bar">

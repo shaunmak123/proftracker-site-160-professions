@@ -5,7 +5,7 @@ const http = require('http');
 const fs = require('fs');
 const path = require('path');
 
-const PORT = 8080;
+const PORT = 8081;
 const ROOT = path.join(__dirname, 'site');
 
 const TYPES = {
@@ -25,7 +25,10 @@ http.createServer((req, res) => {
   const full = path.join(ROOT, p);
   fs.readFile(full, (err, data) => {
     if (err) { res.writeHead(404); res.end('Не найдено: ' + p); return; }
-    res.writeHead(200, { 'Content-Type': TYPES[path.extname(full)] || 'application/octet-stream' });
+    res.writeHead(200, {
+      'Content-Type': TYPES[path.extname(full)] || 'application/octet-stream',
+      'Cache-Control': 'no-store',
+    });
     res.end(data);
   });
 }).listen(PORT, () => {
